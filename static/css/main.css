@@ -140,7 +140,7 @@ a {
 }
 
 .banner-info .haunted {
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-style: oblique;
   color: #d25f00;
   text-shadow: #292348 -3px 3px;
