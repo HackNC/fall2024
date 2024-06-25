@@ -20,11 +20,34 @@
         h1 {
             text-align: center;
         }
+        .slider {
+            position: relative;
+            overflow: hidden;
+        }
+        .slider-inner {
+            display: flex;
+            transition: transform 0.5s;
+        }
+        .slider-item {
+            flex: 0 0 300px; 
+            margin: 10px;
+        }
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .slider-nav.prev {
+            left: 10px;
+        }
+        .slider-nav.next {
+            right: 10px;
+        }
     </style>
 </head>
 
-<body style="background-color: #3A3352; color: #ffffff;"></body>
-    
+<body style="background-color: #3A3352; color: #ffffff;">
 
     <main id="content container">
         <h1>Meet The Team!</h1>
@@ -33,26 +56,84 @@
 
             <div id="directors" class="card full-width lilac">
                 <h2>Directors</h2>
-                    <div class="c-view">
-                        <button id="prev-btn" class="prev-btn">
-
-                        </button>
-                            <div id="itm-list" class="itm-list">
-
+                <div class="slider">
+                    <div class="slider-inner">
+                        <div class="slider-item">
+                            <img src="https://via.placeholder.com/300x300" alt="Director 1">
+                            <div class="info">
+                                <h3>Director 1</h3>
+                                <p>Director 1 bio</p>
                             </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://via.placeholder.com/300x300" alt="Director 2">
+                            <div class="info">
+                                <h3>Director 2</h3>
+                                <p>Director 2 bio</p>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://via.placeholder.com/300x300" alt="Director 2">
+                            <div class="info">
+                                <h3>Director 2</h3>
+                                <p>Director 2 bio</p>
+                            </div>
+                        </div>
+                        <!-- Add more slider items here -->
                     </div>
-
-                <!-- Directors -->
+                    <div class="slider-nav prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="slider-nav next"><i class="fas fa-chevron-right"></i></div>
+                </div>
             </div>
 
             <div id="members" class="card full-width lilac">
                 <h2>Members</h2>
-                <!-- Members -->
+                <div class="slider">
+                    <div class="slider-inner">
+                        <div class="slider-item active">
+                            <img src="https://via.placeholder.com/300x300" alt="Member 1">
+                            <div class="info">
+                                <h3>Member 1</h3>
+                                <p>Member 1 bio</p>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://via.placeholder.com/300x300" alt="Member 2">
+                            <div class="info">
+                                <h3>Member 2</h3>
+                                <p>Member 2 bio</p>
+                            </div>
+                        </div>
+                        <!-- Add more slider items here -->
+                    </div>
+                    <div class="slider-nav prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="slider-nav next"><i class="fas fa-chevron-right"></i></div>
+                </div>
             </div>
 
             <div id="junior-members" class="card full-width lilac">
                 <h2>Junior Members</h2>
-                <!-- Junior Members  -->
+                <div class="slider">
+                    <div class="slider-inner">
+                        <div class="slider-item">
+                            <img src="https://via.placeholder.com/300x300" alt="Junior Member 1">
+                            <div class="info">
+                                <h3>Junior Member 1</h3>
+                                <p>Junior Member 1 bio</p>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://via.placeholder.com/300x300" alt="Junior Member 2">
+                            <div class="info">
+                                <h3>Junior Member 2</h3>
+                                <p>JuniorMember 2 bio</p>
+                            </div>
+                        </div>
+                        <!-- Add more slider items here -->
+                    </div>
+                    <div class="slider-nav prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="slider-nav next"><i class="fas fa-chevron-right"></i></div>
+                </div>
             </div>
 
             <div id="home-link" class="card full-width">
@@ -62,7 +143,11 @@
         </div>
     </main>
 
+    <script src="script.js"></script>
+
 </body>
 
 </html>
+
+
 
