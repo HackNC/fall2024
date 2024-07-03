@@ -1377,7 +1377,7 @@ a:hover {
   }
 }
 .slider {
-  background-color: #3A3352; /* same background color as the body */
+  background-color: #3A3352; 
 }
 
 .info {
@@ -1386,4 +1386,12 @@ a:hover {
 }
 .home-link{
   color: #3A3352;
+}
+.slider-item img {
+  width: 100%; 
+}
+@media (max-width: 480px) {
+  .slider {
+      display: none;
+  }
 }
