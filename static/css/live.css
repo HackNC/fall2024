@@ -1395,3 +1395,10 @@ a:hover {
       display: none;
   }
 }
+
+/* MLH Trust Sizing */
+@media only screen and (min-width: 1200px) {
+  #mlh-trust-badge {
+    max-width: 80px; 
+  }
+}
