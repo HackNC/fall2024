@@ -634,8 +634,9 @@ nav ul a:hover::before {
 }
 
 #about-graphic {
-  height: 300px;
   float: right;
+  height: auto;
+  border-radius: 5%;
 }
 
 #about-past-projects {
@@ -731,7 +732,7 @@ nav ul a:hover::before {
   #about-graphic {
     width: 120px;
     right: 70px;
-    top: 197px;
+    top: 220px;
   }
 
   .about-description {
