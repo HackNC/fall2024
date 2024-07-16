@@ -668,7 +668,7 @@ nav ul a:hover::before {
 }
 
 /* [Mobile] About */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .about {
     min-height: 0vh;
   }
@@ -691,11 +691,18 @@ nav ul a:hover::before {
   }
 
   #about-graphic {
-    width: 170px;
+    width: 250px;
     position: relative;
     top: 230px;
-    right: 100px;
+    right: 90px;
 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #about-graphic {
+    width: 170px;
+    right: 100px;
   }
 }
 
