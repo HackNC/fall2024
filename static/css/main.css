@@ -223,8 +223,15 @@ a {
   text-transform: capitalize;
 }
 
-/* [Mobile] Main Banner */
 
+/* MLH Trust Sizing */
+@media only screen and (min-width: 1200px) {
+  #mlh-trust-badge {
+    max-width: 80px; 
+  }
+}
+
+/* [Mobile] Main Banner */
 @media only screen and (min-width: 320px) and (max-width: 601px) {
   .splash {
     min-height: 50vh;
