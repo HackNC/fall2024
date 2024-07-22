@@ -23,28 +23,49 @@
         }
         .slider {
             position: relative;
-            overflow: hidden;
+            overflow: visible; 
+            padding: 0 30px;
         }
-        .slider-inner {
-            display: flex;
-            transition: transform 0.5s;
-        }
-        .slider-item {
-            flex: 0 0 300px; 
-            margin: 10px;
-        }
-        .slider-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
-        .slider-nav.prev {
-            left: 10px;
-        }
-        .slider-nav.next {
-            right: 10px;
-        }
+
+.slider-inner {
+    display: flex;
+    transition: transform 0.5s;
+    overflow: hidden; 
+}
+
+.slider-item {
+    flex: 0 0 300px; 
+    margin: 10px;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(58, 51, 82, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto; 
+}
+
+.slider-nav.prev {
+    left: -15px;
+}
+
+.slider-nav.next {
+    right: -15px;
+}
+
+.slider-nav i {
+    color: #ffffff;
+}
+
     </style>
 </head>
 
