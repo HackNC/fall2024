@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sliders.forEach((sliderContainer, index) => {
         console.log(`Initializing slider ${index}`);
-        const slider = sliderContainer.querySelector('.slider-inner');
+        const slider = sliderContainer.querySelector('.slide-group');
         const slides = sliderContainer.querySelectorAll('.slider-item');
         const nextButton = sliderContainer.querySelector('.slider-nav.next');
         const prevButton = sliderContainer.querySelector('.slider-nav.prev');
@@ -49,27 +49,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (state.currentSlide < state.totalSlides - visibleSlides) {
             state.currentSlide++;
-            updateSliderPosition(index);
+            updateSliderPosition(index, visibleSlides);
         }
     };
 
     const prevSlide = (index) => {
         const state = sliderStates[index];
+        const visibleSlides = getNumberOfVisibleSlides(state.slider, state.slides);
 
         if (state.currentSlide > 0) {
             state.currentSlide--;
-            updateSliderPosition(index);
+            updateSliderPosition(index, visibleSlides);
         }
     };
 
-    const updateSliderPosition = (index) => {
+    const updateSliderPosition = (index, visibleSlides) => {
         const state = sliderStates[index];
         if (state.slides.length === 0) return;
 
         const slideWidth = state.slides[0].offsetWidth;
-        const translateX = -(state.currentSlide * slideWidth);
-        console.log(`Slider ${index} translateX: ${translateX}px`);
-        state.slider.style.transform = `translateX(${translateX}px)`;
+        const sliderWidth = state.slider.offsetWidth;
+        console.log((sliderWidth/slideWidth) - visibleSlides)
+        if (state.currentSlide == state.totalSlides - visibleSlides){
+            const translateX = -(state.totalSlides*slideWidth - sliderWidth);
+            console.log(`Slider ${index} translateX: ${translateX}px`);
+            state.slider.style.transform = `translateX(${translateX}px)`;
+        }
+        else{
+            const translateX = -(state.currentSlide * slideWidth);
+            console.log(`Slider ${index} translateX: ${translateX}px`);
+            state.slider.style.transform = `translateX(${translateX}px)`;
+        }
     };
 
     const handleResize = (index) => {
