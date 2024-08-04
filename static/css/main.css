@@ -543,11 +543,21 @@ nav.sticky {
 nav .home {
   display: flex;
   align-items: center;
+  height: 60px;
+}
+
+nav .home span {
+  background-color: #292348;
+  border-radius: .5em;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 nav .home img {
   height: 40px;
-  margin-right: 10px;
+  margin-right: 7.5px;
 }
 
 nav li:first-child {
