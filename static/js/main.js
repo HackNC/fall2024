@@ -47,6 +47,17 @@ $(document).ready(function () {
             });
         });
     });
+    document.addEventListener('DOMContentLoaded', function () {
+        var faqLink = document.querySelector('nav a[href="#faq"]');
+        var faqSection = document.getElementById('faq');
+    
+        faqLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            faqSection.classList.add('padded');
+            faqSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+    
 
     //functionality for FAQ accordion dropdown
     $('#faq-container').on('click','.accordion-header', function() {   //selecting #faq-container here since its a parent static element, click() has issues working with dynamic elements
