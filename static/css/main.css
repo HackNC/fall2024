@@ -103,7 +103,55 @@ a {
   }
 }
 
+
+
+.scroll-track{
+  position: relative;
+  background-color: black;
+  padding-bottom: 10px;
+}
+
+.sticky-div {
+ position: -webkit-sticky; /* for safari compatibility */
+ position: sticky;
+ top: 0vh; /* sets offset point i.e. when screen top hits div+10vh height, sticky activated*/
+ background-color: black; /* test */
+ height: 100vh;
+ width: 100vw;
+ color: black;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.space-station-frame{
+   background: url("/static/assets/images/dolly-zoom-space-art/(border) space station border.svg") no-repeat center;
+   background-size: 125vw 110vh;
+   height: 100vh;
+   width: 100vw;
+   z-index: 2;
+}
+
+.starry-sky{
+   margin-top: -100vh;
+   height: 100vh;
+   width: 100vw;
+   background: url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg") no-repeat center;
+   background-size: 150vw 150vh;
+   scale: 1.0;
+   z-index: 1;
+}
+
+.sticky-over {
+   margin: 10px;
+   margin-top: 100vh; /* make text start lower by 100vh so that sticky-div can stay sticky while not covering text over that 100vh scroll */
+   color: black;
+}
+
+
 /* Main Banner */
+/*
 .splash {
   background-color: #292348;
   background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/banner smoke.svg");
@@ -155,8 +203,6 @@ a {
   margin-top: -10px;
   text-align: left;
 }
-
-
 
 .banner-info .tagline {
   font-size: 4rem;
@@ -222,7 +268,7 @@ a {
   font-size: 1.5vw;
   text-transform: capitalize;
 }
-
+*/
 
 /* MLH Trust Sizing */
 @media only screen and (min-width: 1200px) {
@@ -232,6 +278,7 @@ a {
 }
 
 /* [Mobile] Main Banner */
+/*
 @media only screen and (min-width: 320px) and (max-width: 601px) {
   .splash {
     min-height: 50vh;
@@ -434,6 +481,7 @@ a {
     text-align: center;
   }
 }
+*/
 
 @media only screen and (max-width: 599px) {
   .hide-on-med-and-down {
