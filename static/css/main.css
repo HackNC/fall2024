@@ -762,6 +762,7 @@ nav ul a:hover::before {
   transition: transform 0.3s ease-in-out;
 }
 
+
 #faq-container {
   padding-top: 30px;
   display: flex;
@@ -801,17 +802,7 @@ nav ul a:hover::before {
   flex-direction: column;
 }
 
-.open-rocket-initial {
-  transform: rotate(0deg);
-  transition: none;
-}
-
-.open-rocket-final {
-  transform: rotate(45deg);
-  transition: transform 0.3s ease-in-out;
-}
 /* FAQ Questions */
-
 .accordion-header {
   cursor: pointer;
   background-color: transparent;

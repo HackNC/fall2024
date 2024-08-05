@@ -53,30 +53,29 @@ $(document).ready(function () {
             var $img = $(this).children("img.faq-img");
             var isActive = $(this).hasClass('active');
     
+            // Slide up all other accordion bodies and reset their rockets
             $('.accordion-body').not($(this).next('.accordion-body')).slideUp();
             $('.accordion-header').not($(this)).removeClass('active').children("img.faq-img")
                 .attr("src", "static/assets/images/rocket-closed.svg")
                 .css("transform", "rotate(0deg)"); // Reset to initial vertical position
     
-            $(this).next('.accordion-body').slideToggle();
+            // Toggle the visibility of the clicked FAQ's answer
+            $(this).next('.accordion-body').slideToggle({
+                start: function() {
+                    // Immediately change the image to the open rocket, maintaining vertical
+                    $img.attr("src", "static/assets/images/rocket-open.svg")
+                        .css("transform", "rotate(-90deg)") // Ensure vertical
+                        .css("transition", "none"); // Disable transition for immediate effect
+                },
+                complete: function() {
+                    if (!isActive) {
+                        // Now enable transition and rotate to 45 degrees
+                        $img.css("transition", "transform 0.3s ease-in-out"); // Enable transition
+                        $img.css("transform", "rotate(-45deg)"); // Smoothly rotate to 45 degrees
+                    }
+                }
+            });
+    
             $(this).toggleClass('active');
-    
-            if (!isActive) {
-                // Start at -90 degrees, then animate to -45 degrees
-                $img.attr("src", "static/assets/images/rocket-open.svg")
-                    .css("transform", "rotate(-90deg)");
-    
-                // Force a reflow to ensure the starting transform is applied immediately
-                void $img[0].offsetWidth;
-    
-                // Animate to -45 degrees
-                $img.css("transform", "rotate(-45deg)");
-            } else {
-                // Transition back to closed rocket
-                $img.css("transform", "rotate(0deg)").on("transitionend", function() {
-                    $img.attr("src", "static/assets/images/rocket-closed.svg");
-                    $img.off("transitionend");
-                });
-            }
         });
     });
