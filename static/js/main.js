@@ -62,16 +62,16 @@ $(document).ready(function () {
             // Toggle the visibility of the clicked FAQ's answer
             $(this).next('.accordion-body').slideToggle({
                 start: function() {
-                    // Immediately change the image to the open rocket, maintaining vertical
+                    // Maintaining vertical
                     $img.attr("src", "static/assets/images/rocket-open.svg")
-                        .css("transform", "rotate(-90deg)") // Ensure vertical
-                        .css("transition", "none"); // Disable transition for immediate effect
+                        .css("transform", "rotate(-90deg)") 
+                        .css("transition", "none");
                 },
                 complete: function() {
                     if (!isActive) {
-                        // Now enable transition and rotate to 45 degrees
-                        $img.css("transition", "transform 0.3s ease-in-out"); // Enable transition
-                        $img.css("transform", "rotate(-45deg)"); // Smoothly rotate to 45 degrees
+                        // Transition
+                        $img.css("transition", "transform 0.3s ease-in-out"); 
+                        $img.css("transform", "rotate(-45deg)");
                     }
                 }
             });
