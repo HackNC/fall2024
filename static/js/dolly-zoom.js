@@ -6,6 +6,8 @@ document.addEventListener('scroll', function() {
     const ctrl = document.querySelector('#ctrl-panel');
     const pipes = document.querySelector('#pipes');
     const ID = document.querySelector('#id-card');
+    const screen = document.querySelector('#screen');
+    const coffee = document.querySelector('#coffee');
     const image = document.querySelector('.starry-sky');
     const scrollPosition = window.scrollY;
 
@@ -21,6 +23,14 @@ document.addEventListener('scroll', function() {
     const initID = 15; // 15vw height
     const initIDX = 20;
     const initIDY = -50;
+
+    const initScreen = 30; // 30vw height
+    const initScreenX = 15;
+    const initScreenY = -115;
+
+    const initCoffee = 10; // 10vw height
+    const initCoffeeX = -170;
+    const initCoffeeY  = -150;
 
     const initialFrameSize = 110;
     const initialImageSize = 150;
@@ -45,6 +55,14 @@ document.addEventListener('scroll', function() {
     const newIDX = initIDX + (scrollPosition/ (maxStickyScroll/(-350-initIDX)))
     const newIDY = initIDY + (scrollPosition/ (maxStickyScroll/(300-initIDY)))
 
+    const newScreen = initScreen + (scrollPosition / (maxStickyScroll/(90-initScreen)))
+    const newScreenX = initScreenX + (scrollPosition/ (maxStickyScroll/(200-initScreenX)))
+    const newScreenY = initScreenY + (scrollPosition/ (maxStickyScroll/(90-initScreenY)))
+
+    const newCoffee = initCoffee + (scrollPosition / (maxStickyScroll/(70-initCoffee)))
+    const newCoffeeX = initCoffeeX + (scrollPosition/ (maxStickyScroll/(650-initCoffeeX)))
+    const newCoffeeY = initCoffeeY + (scrollPosition/ (maxStickyScroll/(600-initCoffeeY)))
+
     // Apply the new sizes
     if (scrollPosition <= maxStickyScroll) {
         image.style.backgroundSize = `${newImageBGSize}vw ${newImageBGSize}vh`;
@@ -57,6 +75,10 @@ document.addEventListener('scroll', function() {
         pipes.style.transform = `translate(${newPipeX}%, -50%)`;
         ID.style.height = `${newID}vw`; // keep as vw
         ID.style.transform = `translate(${newIDX}%, ${newIDY}%)`;
+        screen.style.height = `${newScreen}vw`; // keep as vw
+        screen.style.transform = `translate(${newScreenX}%, ${newScreenY}%)`;
+        coffee.style.height = `${newCoffee}vw`; // keep as vw
+        coffee.style.transform = `translate(${newCoffeeX}%, ${newCoffeeY}%)`;
     }
     // To ensure render issues don't happen due to scrolling too fast:
     else {
@@ -67,5 +89,11 @@ document.addEventListener('scroll', function() {
         ctrl.style.transform = `translate(-300%, -50%)`;
         pipes.style.height = `100vw`; // keep as vw
         pipes.style.transform = `translate(400%, -50%)`;
+        ID.style.height = `80vw`; // keep as vw
+        ID.style.transform = `translate(-350%, 300%)`;
+        screen.style.height = `90vw`; // keep as vw
+        screen.style.transform = `translate(200%, 90%)`;
+        coffee.style.height = `70vw`; // keep as vw
+        coffee.style.transform = `translate(650%, 600%)`;
     }
 });
