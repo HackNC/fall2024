@@ -115,7 +115,7 @@ a {
  position: -webkit-sticky; /* for safari compatibility */
  position: sticky;
  top: 0vh; /* sets offset point i.e. when screen top hits div+10vh height, sticky activated*/
- background-color: black; /* test */
+ background-color: black;
  height: 100vh;
  width: 100vw;
  color: black;
@@ -123,6 +123,7 @@ a {
  align-items: center;
  justify-content: center;
  flex-direction: column;
+ overflow: hidden;
 }
 
 .space-station-frame{
@@ -131,6 +132,7 @@ a {
    height: 100vh;
    width: 100vw;
    z-index: 2;
+   overflow: hidden;
 }
 
 .starry-sky{
@@ -141,6 +143,50 @@ a {
    background-size: 150vw 150vh;
    scale: 1.0;
    z-index: 1;
+}
+
+#astronaut-ram {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  height: auto;
+  width: 50vw;
+  max-width: 100vw;
+  z-index: 4;
+}
+
+#ctrl-panel {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  height: 40vw; /* intentionally kept vw */
+  width: auto;
+  max-width: 100vw;
+  z-index: 3;
+}
+
+#pipes {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(10%, -50%);
+  height: 40vw; /* intentionally kept vw */
+  width: auto;
+  max-width: 100vw;
+  z-index: 3;
+}
+
+#id-card {
+  position: absolute;
+  top: 85%;
+  left: 0%;
+  transform: translate(20%, -50%);
+  height: 15vw; /* intentionally kept vw */
+  width: auto;
+  max-width: 100vw;
+  z-index: 3;
 }
 
 .sticky-over {
