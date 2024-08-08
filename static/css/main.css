@@ -126,6 +126,12 @@ a {
  overflow: hidden;
 }
 
+.sticky-over {
+  margin: 10px;
+  margin-top: 100vh; /* make text start lower by 100vh so that sticky-div can stay sticky while not covering text over that 100vh scroll */
+  color: black;
+}
+
 .space-station-frame{
    background: url("/static/assets/images/dolly-zoom-space-art/(border) space station border.svg") no-repeat center;
    background-size: 125vw 110vh;
@@ -160,8 +166,8 @@ a {
   position: absolute;
   top: 50%;
   left: 0%;
-  transform: translate(0%, -50%);
-  height: 40vw; /* intentionally kept vw */
+  transform: translate(-10%, -50%);
+  height: 30vw; /* intentionally kept vw */
   width: auto;
   max-width: 100vw;
   z-index: 3;
@@ -211,34 +217,129 @@ a {
   z-index: 3;
 }
 
-#blk-hole {
+#ram-planet {
   position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: translate(20%, 50%);
-  height: 15vw; /* intentionally kept vw */
+  top: 50%;
+  left: 5%;
+  transform: translate(0%, -50%);
+  height: 40vw; /* intentionally kept vw */
   width: auto;
   max-width: 100vw;
   z-index: 3;
 }
 
-#dolly-stars {
+#HackNC-text { /* fix like above with left attribute */
   position: absolute;
-  top: 0%;
-  right: 0%;
-  transform: translate(20%, 50%);
-  height: 15vw; /* intentionally kept vw */
+  top: 50%;
+  right: 10%;
+  transform: translate(0%, -70%);
+  height: 40vw; /* intentionally kept vw */
   width: auto;
   max-width: 100vw;
   z-index: 3;
 }
 
-.sticky-over {
-   margin: 10px;
-   margin-top: 100vh; /* make text start lower by 100vh so that sticky-div can stay sticky while not covering text over that 100vh scroll */
-   color: black;
+.banner-info {
+  width: calc(38vw - 20px);
+  position: absolute;
+  right: 7.5%;
+  top: 55vh;
+  color: #d5cbef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
+.banner-info .mobile-registration-link {
+  margin-top: 0px;
+  display: none;
+  text-align: right;
+}
+
+.banner-info .date {
+  font-weight: bold;
+  font-size: 2.5vw;
+  text-transform: capitalize;
+}
+
+/* [Mobile] Main Banner */
+@media only screen and (min-width: 320px) and (max-width: 601px) {
+
+  .banner-info {
+    width: 100%;
+    margin: auto;
+    top: 54%;
+    right: 100%;
+    left: 50%;
+    bottom: 0%;
+    margin-left: -51%;
+    color: #d5cbef;
+    text-align: center;
+  }
+
+  .banner-info .register-button {
+    text-decoration: none;
+    background-color: #d5cbef;
+    display: block;
+    color: #292348;
+    font-weight: bold;
+    width: max-content;
+    padding: 5px 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 3vw;
+  }
+  .banner-info .mobile-registration-link:last-child {
+    margin-bottom: 0px;
+  }
+
+  .banner-info .date {
+    font-weight: bold;
+    font-size: 1.45rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  .banner-info {
+    width: 100%;
+    margin: auto;
+    top: 54%;
+    right: 100%;
+    left: 50%;
+    bottom: 0%;
+    margin-left: -51%;
+    color: #d5cbef;
+    text-align: center;
+
+  }
+
+  .banner-info .mobile-registration-link {
+    text-decoration: none;
+    background-color: #d5cbef;
+    display: block;
+    color: #292348;
+    font-weight: bold;
+    width: max-content;
+    padding: 5px 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 3vw;
+  }
+
+  .banner-info .date {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin-bottom: 1px;
+  }
+}
 
 /* Main Banner */
 /*
@@ -584,7 +685,6 @@ a {
 }
 
 .involve-button {
-  margin-top: 20px;
   border-radius: 35px;
   transition: transform 0.15s;
   background-color: #d5cbef;
@@ -595,8 +695,7 @@ a {
   padding-right: 2vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
-  font-size: 1rem;
-  margin-right: 30px;
+  font-size: 1.45vw;
 }
 
 .involve-button a {
