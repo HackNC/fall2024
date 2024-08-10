@@ -14,8 +14,8 @@ document.addEventListener('scroll', function() {
     const bannerinfo = document.querySelector('.banner-info')
     const scrollPosition = window.scrollY;
 
-    const initialRamSize = 50;
-    const initialRamY = -90
+    var initialRamSize; // initialized later
+    const initialRamY = -90;
 
     const initCtrl = 30; // 40vw height
     const initCtrlX = -10;
@@ -27,26 +27,56 @@ document.addEventListener('scroll', function() {
     const initIDX = 20;
     const initIDY = -50;
 
-    const initScreen = 30; // 30vw height
+    var initScreen; // initialized later
     const initScreenX = 15;
     const initScreenY = -115;
 
-    const initCoffee = 10; // 10vw height
+    var initCoffee; // initialized later
     const initCoffeeX = -170;
     const initCoffeeY  = -150;
 
-    const initPlanet = 40; // 40vw height
-    const initPlanetX = 0;
-
-    const initText = 40; // 40vw height
-    const initTextX = 0;
+    var initPlanet; // initialized later
+    var initText; // initialized later
 
     const initialFrameSize = 110;
     const initialImageSize = 150;
-    const maxStickyScroll = 700;
+    const maxStickyScroll = 600;
     const minImageBGSize = 95;
     const maxFrameBGSize = 200;
 
+    // make responsive so that at screenwidth: 1350px, the images start out a bit smaller. This adapts animation speed accordingly
+    if (window.innerWidth >= 1350) {
+        initialRamSize = 40;
+        initScreen = 25;
+        initCoffee = 7.5;
+        initPlanet = 35;
+        initText = 35;
+    }
+    else {
+        initialRamSize = 50;
+        initScreen = 30; // 30vw height
+        initCoffee = 10; // 10vw height 
+        initPlanet = 40; // 40vw height
+        initText = 40; // 40vw height
+    }
+
+    // At 600px and lower, want to keep planet and text at center and no movements. Size updates need to be done regardless so it is done outside in the next if statement
+    if (window.innerWidth > 600) {
+        const initTextX = 0;
+        const initPlanetX = 0;
+        const newPlanetX = initPlanetX + (scrollPosition/ (maxStickyScroll/(-15-initPlanetX)))
+        const newTextX = initTextX + (scrollPosition/ (maxStickyScroll/(15-initTextX)))
+        if (scrollPosition <= maxStickyScroll) {
+            ramplanet.style.transform = `translate(${newPlanetX}%, -50%)`;
+            hacknctext.style.transform = `translate(${newTextX}%, -70%)`;
+        }
+        // To ensure render issues don't happen due to scrolling too fast:
+        else {
+            ramplanet.style.transform = `translate(-15%, -50%)`;
+            hacknctext.style.transform = `translate(15%, -70%)`;
+        }
+    }
+        
     // Calculate the new sizes based on scroll position
     const newFrameBGSize = initialFrameSize + (scrollPosition / (maxStickyScroll/(maxFrameBGSize-initialFrameSize))); // 100 is initial size
     const newImageBGSize = initialImageSize - (scrollPosition / (maxStickyScroll/(initialImageSize-minImageBGSize))); // 150 is initial size
@@ -73,11 +103,8 @@ document.addEventListener('scroll', function() {
     const newCoffeeY = initCoffeeY + (scrollPosition/ (maxStickyScroll/(700-initCoffeeY)))
     
     const newPlanet = initPlanet + (scrollPosition / (maxStickyScroll/(50-initPlanet)))
-    const newPlanetX = initPlanetX + (scrollPosition/ (maxStickyScroll/(-15-initPlanetX)))
-
     const newText = initText + (scrollPosition / (maxStickyScroll/(45-initText)))
-    const newTextX = initTextX + (scrollPosition/ (maxStickyScroll/(15-initTextX)))
-
+    
     // Apply the new sizes
     if (scrollPosition <= maxStickyScroll) {
         image.style.backgroundSize = `${newImageBGSize}vw ${newImageBGSize}vh`;
@@ -95,9 +122,7 @@ document.addEventListener('scroll', function() {
         coffee.style.height = `${newCoffee}vw`; // keep as vw
         coffee.style.transform = `translate(${newCoffeeX}%, ${newCoffeeY}%)`;
         ramplanet.style.height = `${newPlanet}vw`; // keep as vw
-        ramplanet.style.transform = `translate(${newPlanetX}%, -50%)`;
         hacknctext.style.height = `${newText}vw`; // keep as vw
-        hacknctext.style.transform = `translate(${newTextX}%, -70%)`;
         bannerinfo.style.opacity = `0`;
         bannerinfo.style.visibility = `hidden`;
     }
@@ -118,9 +143,7 @@ document.addEventListener('scroll', function() {
         coffee.style.height = `60vw`; // keep as vw
         coffee.style.transform = `translate(1000%, 700%)`;
         ramplanet.style.height = `50vw`; // keep as vw
-        ramplanet.style.transform = `translate(-15%, -50%)`;
         hacknctext.style.height = `45vw`; // keep as vw
-        hacknctext.style.transform = `translate(15%, -70%)`;
         bannerinfo.style.opacity = 1;
         bannerinfo.style.visibility = 'visible';
     }
