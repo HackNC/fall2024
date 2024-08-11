@@ -738,6 +738,39 @@ nav ul a:hover::before {
   }
 }
 
+/* About to FAQ */
+.about-to-faq {
+  height: 20vh;
+  background: linear-gradient(#0A0058,#4017D8)
+}
+
+.mars {
+  width: 7vw;
+  height: auto;
+  position: relative;
+  top: 2vh;
+  left: 15vw;
+  transform: translate(50%, 50%);
+}
+
+.neptune {
+  width: 10vw;
+  height: auto;
+  position: relative;
+  top: -4vh;
+  left: 30vw;
+  transform: translate(50%, 50%);
+}
+
+.saturn {
+  width: 20vw;
+  height: auto;
+  position: relative;
+  transform: translate(50%, 50%);
+  top: -7vh;
+  left: 11vw;
+}
+
 /* FAQ */
 .faq {
   background: #3c2654 url("/static/assets/images/halloween-art/faq\ smoke.svg") bottom no-repeat;
