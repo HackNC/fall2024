@@ -578,6 +578,15 @@ nav ul a:hover::before {
   transition: transform 0.3s;
 }
 
+/* Splash to About section transition */
+
+#splash-about-transition {
+  height: 100vh;
+  width: 100vw;
+  object-fit: contain;
+  position: relative;
+}
+
 /* About */
 .about {
   background: #4a3974 url("/static/assets/images/halloween-art/about\ smoke.svg") no-repeat center center;
