@@ -581,10 +581,15 @@ nav ul a:hover::before {
 /* Splash to About section transition */
 
 #splash-about-transition {
-  height: 100vh;
-  width: 100vw;
-  object-fit: contain;
   position: relative;
+  width: 100vw;
+  height: 100vh; /* testing smaller height */
+  max-height: 160vh; /* Allows image to spill over slightly */
+  object-fit: cover;
+  z-index: 1;
+  margin-top: -45vh; /* Pull the image up to overlap with the content above */
+  border: 1px solid red;
+  margin-bottom: -45vh;
 }
 
 /* About */
@@ -660,6 +665,7 @@ nav ul a:hover::before {
 @media only screen and (max-width: 600px) {
   .about {
     min-height: 0vh;
+    padding-top: 27.5vh;
   }
 
   .about-info {
