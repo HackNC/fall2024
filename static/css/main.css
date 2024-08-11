@@ -773,13 +773,13 @@ nav ul a:hover::before {
 
 /* FAQ */
 .faq {
-  background: #3c2654 url("/static/assets/images/halloween-art/faq\ smoke.svg") bottom no-repeat;
+  background: #4017D8;
   background-size: contain;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   padding: 0 0 20vh 0;
-  color: #d5cbef;
+  color: white;
 }
 
 
@@ -827,7 +827,7 @@ nav ul a:hover::before {
 .accordion-header {
   cursor: pointer;
   background-color: transparent;
-  color: #d5cbef;
+  color: white;
   padding: 10px;
   border: none;
   border-radius: 20px;
@@ -851,7 +851,7 @@ nav ul a:hover::before {
 .active,
 .accordion-header:hover {
   cursor: pointer;
-  background-color: #2e1c40;
+  background-color: #0A0058;
 }
 
 .accordion-body {
@@ -861,8 +861,8 @@ nav ul a:hover::before {
 .accordion-body p.faq-answer {
   margin: 0 0 0 55px;
   padding: 1rem;
-  background-color: #d5cbef;
-  color: #392751;
+  background-color: white;
+  color: #0A0058;
   border-radius: 5px;
   font-size: 1rem;
 }
