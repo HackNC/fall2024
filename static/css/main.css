@@ -588,26 +588,25 @@ nav ul a:hover::before {
   object-fit: cover;
   z-index: 1;
   margin-top: -45vh; /* Pull the image up to overlap with the content above */
-  border: 1px solid red;
   margin-bottom: -45vh;
 }
 
 /* About */
 .about {
-  background: #4a3974 url("/static/assets/images/halloween-art/about\ smoke.svg") no-repeat center center;
+  background: #0A0058;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   padding: 20vh 0 23vh 0;
-  color: #d5cbef;
+  color: white;
 }
 
 .about-description {
-  background-color: #d5cbef;
-  color: #23183b;
+  background-color: white;
+  color: #0A0058;
   border-radius: 5px;
-  border-color: #23183b;
+  border-color: #0A0058;
   padding: 1rem;
   font-size: 1rem;
 }
@@ -629,7 +628,8 @@ nav ul a:hover::before {
 }
 
 #about-graphic {
-  height: 300px;
+  width: 40%;
+  height: auto;
   float: right;
 }
 
@@ -637,8 +637,8 @@ nav ul a:hover::before {
   margin-top: 20px;
   border-radius: 35px;
   transition: transform 0.15s;
-  background-color: #d5cbef;
-  border-color: #292348;
+  background-color: white;
+  border-color: #0A0058;
   border-width: 1px;
   border-style: solid;
   padding-left: 2vw;
@@ -666,11 +666,14 @@ nav ul a:hover::before {
   .about {
     min-height: 0vh;
     padding-top: 27.5vh;
+    padding-bottom: 0;
   }
 
   .about-info {
     position: relative;
     top: -110px;
+    text-overflow: initial;
+    overflow: scroll; 
   }
 
   .about-heading {
@@ -681,16 +684,13 @@ nav ul a:hover::before {
   .about-description {
     font-size: .8rem;
     margin-bottom: 10px;
-    width: 145%;
+    width: 90%;
+    max-width: 100%;
     margin-right: 5px;
   }
 
   #about-graphic {
-    width: 170px;
-    position: relative;
-    top: 230px;
-    right: 100px;
-
+    display: none;
   }
 }
 
@@ -706,6 +706,7 @@ nav ul a:hover::before {
   #about-graphic {
     width: 160px;
     right: 90px;
+    display: none;
   }
 
   .about-description {
@@ -728,6 +729,7 @@ nav ul a:hover::before {
     width: 120px;
     right: 70px;
     top: 197px;
+    display: none;
   }
 
   .about-description {
