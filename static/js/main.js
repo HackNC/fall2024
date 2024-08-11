@@ -73,6 +73,10 @@ $(document).ready(function () {
                         $img.css("transition", "transform 0.3s ease-in-out"); 
                         $img.css("transform", "rotate(-45deg)");
                     }
+                    else { 
+                        $img.attr("src", "static/assets/images/rocket-closed.svg")
+                    .css("transform", "rotate(0deg)")
+                    }
                 }
             });
     
