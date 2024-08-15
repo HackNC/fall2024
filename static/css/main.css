@@ -782,6 +782,9 @@ nav ul a:hover::before {
   color: #d5cbef;
 }
 
+.faq-img {
+  transition: transform 0.3s ease-in-out;
+}
 
 
 #faq-container {
@@ -867,21 +870,6 @@ nav ul a:hover::before {
   font-size: 1rem;
 }
 
-.spin {
-  animation-duration: 500ms;
-  animation-name: spin;
-  animation-timing-function: linear;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* [Mobile] FAQ */
 @media only screen and (max-width: 600px) {
