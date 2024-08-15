@@ -903,13 +903,13 @@ nav ul a:hover::before {
 
 /* Sponsors */
 .sponsors {
-  background: #25173d url("/static/assets/images/halloween-art/footer\ smoke.svg") bottom no-repeat;
+  background: #0064FF url("/static/assets/images/halloween-art/footer\ smoke.svg") bottom no-repeat;
   background-size: contain;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   padding: 0 0 15vh 0;
-  color: #d5cbef;
+  color: #ffffff;
 }
 
 #sponsor-section {
@@ -998,6 +998,7 @@ nav ul a:hover::before {
   -webkit-transform: scale(1.1);
   transition: transform 0.3s;
 }
+
 
 /* [Mobile] Sponsors */
 @media only screen and (max-width: 736px) {
