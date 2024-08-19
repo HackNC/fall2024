@@ -1,9 +1,11 @@
 * {
-  font-family: 'Lora', serif;
+  font-family: 'Urbanist', sans-serif;
 }
 
 :root {
-  --main-text-color: #d5cbef;
+  --main-text-color: #FFFFFF;
+  --main-bg-color: #10073D;
+  --hover-bg-color: #1E0C61;
   --hamburger-back-color: #292348;
 }
 
@@ -26,6 +28,8 @@ body {
 }
 
 h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
   letter-spacing: 0.075em;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -43,7 +47,6 @@ h1 {
 p {
   font-size: 1rem;
 }
-
 
 a {
   color: #23183b;
@@ -120,6 +123,7 @@ nav {
 
 nav.sticky {
   background-color: #292348;
+  /* background-color: var(--main-bg-color); */
   -webkit-text-stroke-width: 0px;
 }
 
@@ -172,6 +176,7 @@ nav ul a {
   display: inline-block;
   text-decoration: none;
   color: #d5cbef;
+  /* color: var(--main-text-color); */
   padding: 0px 10px;
   height: 64px;
   font-size: 1.5rem;
@@ -182,10 +187,13 @@ nav ul a {
 
 nav ul a:hover {
   text-shadow: -2px -2px #25173d;
+  background-color: var(--hover-bg-color);
 }
 
 nav ul a.mobile-registration-link {
   background-color: #a12027;
+  /* background-color: #c53043;
+  color: var(--main-text-color); */
   height: 27px;
   padding: 0px 5px;
   margin: 0px 10px;
@@ -1013,6 +1021,21 @@ nav ul a:hover::before {
   transition: transform 0.3s;
 }
 
+/* Aurora Transition */
+.aurora-transition {
+  position: relative;
+  height: 30vh;
+  background: linear-gradient(to bottom, #0064FF, #6380FF);
+  overflow: hidden;
+}
+
+.aurora-beams {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
 
 /* [Mobile] Sponsors */
 @media only screen and (max-width: 736px) {
@@ -1026,25 +1049,16 @@ nav ul a:hover::before {
 }
 
 footer {
-  position: absolute;
-  height: auto;
   background: #6380FF;
   color: #d5cbef;
   font-size: 1.3rem;
   text-align: center;
-  padding-bottom: 0;
-  margin-bottom: 200;
   overflow: hidden;
 }
 
 footer p {
   margin-top: 0;
-}
-
-@media only screen and (max-width: 300px) {
-  footer {
-    height: 200vh;
-  }
+  margin-bottom: 10px;
 }
 
 footer a {
@@ -1060,29 +1074,37 @@ footer u {
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
-  margin-bottom: 200;
   color:#796bae;
 }
 
-footer .lastline {
-  margin-bottom: 250px;
-}
-
 .background-container {
-  width: 100vw;
-  height: 70vh;
+  width: 100%;
   background-image: url('/footer/fall2024/static/assets/images/websitefooter.svg'),
   url('/footer/fall2024/static/assets/images/aurora.svg');
   background-size: contain, cover;
-  background-position: center, center;
+  background-position: center bottom, center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 0;
-  margin: 0;
-  overflow: hidden;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .live-button {
   font-size: 2.5em;
+}
+
+footer img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
