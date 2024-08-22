@@ -272,6 +272,7 @@ nav ul a:hover::before {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
+  z-index: 2;
 }
 
 .sticky-over {
@@ -572,6 +573,7 @@ nav ul a:hover::before {
 
 .involve-button {
   border-radius: 35px;
+  width: 30vw;
   transition: transform 0.15s;
   background-color: #0A0058;
   border-color: #702DA4;
@@ -582,6 +584,8 @@ nav ul a:hover::before {
   padding-top: 1vw;
   padding-bottom: 1vw;
   font-size: 2vw;
+  position: relative;
+  z-index: 3;
 }
 
 .involve-button a {
@@ -601,12 +605,48 @@ nav ul a:hover::before {
 #splash-about-transition {
   position: relative;
   width: 100vw;
-  height: 100vh; /* testing smaller height */
-  max-height: 160vh; /* Allows image to spill over slightly */
+  height: 30vh;
+  max-height: 160vh;
   object-fit: cover;
-  z-index: 1;
-  margin-top: -45vh; /* Pull the image up to overlap with the content above */
-  margin-bottom: -45vh;
+  z-index: 3;
+  margin-top: -25vh;
+  margin-bottom: -15vh;
+}
+
+/* Medium screens */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  #splash-about-transition {
+    max-height: 120vh;
+    margin-top: -60vh;
+    margin-bottom: -13vh;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 767px) {
+  #splash-about-transition {
+    /* max-height: auto; */
+    margin-top: 50vh;
+    margin-bottom: -50vh;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  #splash-about-transition {
+    max-height: 80vh;
+    margin-top: -40vh;
+    margin-bottom: -15vh;
+  }
+}
+
+/* Smallest of screens */
+@media screen and (max-width: 380px) {
+  #splash-about-transition {
+    max-height: 80vh;
+    margin-top: -40vh;
+    margin-bottom: -13vh;
+  }
 }
 
 /* About */
