@@ -272,6 +272,7 @@ nav ul a:hover::before {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
+  z-index: 2;
 }
 
 .sticky-over {
