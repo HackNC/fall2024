@@ -62,20 +62,19 @@ $(document).ready(function () {
             // Toggle the visibility of the clicked FAQ's answer
             $(this).next('.accordion-body').slideToggle({
                 start: function() {
-                    // Maintaining vertical
                     $img.attr("src", "static/assets/images/rocket-open.svg")
-                        .css("transform", "rotate(-90deg)") 
-                        .css("transition", "none");
+                    .css("transform", "scale(1.6)")
+                    
                 },
                 complete: function() {
                     if (!isActive) {
                         // Transition
-                        $img.css("transition", "transform 0.3s ease-in-out"); 
-                        $img.css("transform", "rotate(-45deg)");
+                        $img.css("transition", "transform 0.3s ease-in-out")
+                        .css("transform", "rotate(45deg) scale(1.6)");
                     }
                     else { 
                         $img.attr("src", "static/assets/images/rocket-closed.svg")
-                    .css("transform", "rotate(0deg)")
+                        .css("transform", "rotate(0deg)")
                     }
                 }
             });
