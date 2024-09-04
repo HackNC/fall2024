@@ -958,7 +958,7 @@ nav ul a:hover::before {
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
-  padding: 0 0 15vh 0;
+  padding: 0 0 0 0;
   color: #FFF9D6;
 }
 
