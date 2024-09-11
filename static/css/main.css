@@ -643,7 +643,7 @@ nav ul a:hover::before {
 
 /* About */
 .about {
-  background: #0A0058;
+  background: #0A0058 url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg") no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -823,7 +823,7 @@ nav ul a:hover::before {
 
 /* FAQ */
 .faq {
-  background: #4017D8;
+  background: #4017D8 url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg") no-repeat center;
   background-size: contain;
   -webkit-background-size: contain;
   -moz-background-size: contain;
