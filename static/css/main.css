@@ -1049,21 +1049,6 @@ nav ul a:hover::before {
   transition: transform 0.3s;
 }
 
-/* Aurora Transition */
-.aurora-transition {
-  position: relative;
-  height: 30vh;
-  background: linear-gradient(to bottom, #0064FF, #6380FF);
-  overflow: hidden;
-}
-
-.aurora-beams {
-  position: absolute;
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.7;
-}
 
 /* [Mobile] Sponsors */
 @media only screen and (max-width: 736px) {
@@ -1077,13 +1062,18 @@ nav ul a:hover::before {
 }
 
 footer {
-  background: #6380FF url('/static/assets/images/aurora.svg') center no-repeat;
+  background: #6380FF url('/static/assets/images/aurora.svg') top center no-repeat;
   z-index: 1;
   background-size: cover;
   color: #FFF9D6;
   font-size: 1.3rem;
   text-align: center;
   overflow: hidden;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 footer p {
@@ -1108,152 +1098,10 @@ footer u {
 }
 
 .background-container {
+  background: url("/static/assets/images/websitefooter.svg") bottom center no-repeat;
+  background-size: cover;
+  height: fit-content;
   width: 100%;
-  padding: 20px 0;
-  display: flex;
-  transform: translateY(5%);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.skyscraper {
-  width: 110%;
-  position: relative;
-  transform: translateY(20%);
-  position: 1000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} 
-
-@media only screen and (max-width: 376px) {
-  .skyscraper {
-    width: 110%;
-    position: relative;
-    transform: translateY(55%);
-    position: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-}
-
-@media only screen and (max-width: 415px){
-  .skyscraper{
-    width: 110%;
-    position: relative;
-    transform: translateY(50%);
-    position: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media only screen and (max-width: 431px){
-  .skyscraper{
-    width: 110%;
-    position: relative;
-    transform: translateY(48%);
-    position: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media only screen and (max-width: 361px){
-  .skyscraper{
-    width: 110%;
-    position: relative;
-    transform: translateY(55%);
-    position: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media only screen and (max-width: 769px){
-  .skyscraper{
-    width: 110%;
-    position: relative;
-    transform: translateY(30%);
-    position: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media only screen and (max-width: 821px){
-  .skyscraper{
-    width: 110%;
-    position: relative;
-    transform: translateY(30%);
-    position: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media only screen and (max-width: 913px){
-  .skyscraper{
-    width: 110%;
-    position: relative;
-    transform: translateY(25%);
-    position: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media only screen and (max-width: 541px){
-  .skyscraper{
-    width: 110%;
-    position: relative;
-    transform: translateY(40%);
-    position: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media only screen and (max-width: 345px){
-  .skyscraper{
-    width: 110%;
-    position: relative;
-    transform: translateY(60%);
-    position: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media only screen and (max-width: 413px){
-  .skyscraper{
-    width: 110%;
-    position: relative;
-    transform: translateY(50%);
-    position: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 .footer-content {
@@ -1262,6 +1110,8 @@ footer u {
   align-items: center;
   justify-content: center;
   z-index: 1;
+  padding-top: 20vw;
+  padding-bottom: 5vw;
 }
 
 .live-button {
