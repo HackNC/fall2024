@@ -791,7 +791,7 @@ nav ul a:hover::before {
 /* About to FAQ */
 .about-to-faq {
   height: 20vh;
-  background: linear-gradient(#0A0058,#4017D8)
+  background: url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg") center, linear-gradient(#0A0058,#4017D8);
 }
 
 .mars {
@@ -1003,7 +1003,8 @@ nav ul a:hover::before {
 }
 
 #KTP-logo,
-#DeutscheBank-logo {
+#DeutscheBank-logo, 
+#Lowes-logo {
   height: 5rem;
 }
 
@@ -1014,12 +1015,14 @@ nav ul a:hover::before {
 
 #Pearson-logo,
 #Infosys-logo,
-#Cisco-logo {
+#Cisco-logo,
+#CapitalOne-logo {
   height: 4rem;
 }
 
 #CapTech-logo,
-#Revvity-logo {
+#Revvity-logo, 
+#Fidelity-logo {
   height: 6rem;
 }
 
@@ -1031,7 +1034,8 @@ nav ul a:hover::before {
   height: 11rem;
 }
 
-#Zilliz-logo {
+#Zilliz-logo,
+#Pendo-logo {
   height: 8rem;
 }
 
