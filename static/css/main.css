@@ -549,6 +549,22 @@ nav ul a:hover::before {
 }
 
 /* MLH Trust Sizing */
+
+#mlh-trust-badge {
+  display:block;
+  max-width:100px;
+  min-width:60px;
+  position:fixed;
+  right:25px;
+  top:0;
+  width:10%;
+  z-index:10000;
+}
+
+#mlh-trust-badge img {
+  width: 100%;
+}
+
 @media only screen and (min-width: 1200px) {
   #mlh-trust-badge {
     max-width: 80px;
