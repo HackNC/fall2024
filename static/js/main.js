@@ -12,7 +12,7 @@ $(document).ready(function () {
     }
 
     var i = -1;     //index of each question in faq.json
-    $.getJSON("/static/assets/faq.json", function (data) {
+    $.getJSON("static/assets/faq.json", function (data) {
         data.forEach(function (question) {
             
             i++;
@@ -20,7 +20,7 @@ $(document).ready(function () {
             var $faq = $('<div>');
             var $faq_answer = $('<div class="accordion-body">');
 
-            $header.append($('<img>', { "class": "faq-img", "src": "static/assets/images/halloween-art/moon.svg", "alt": "moon" }));
+            $header.append($('<img>', { "class": "faq-img", "src": "static/assets/images/rocket-closed.svg", "alt": "bullet" }));
             $header.append($('<p class="faq-question">').html(question['question'+(i%2+1)]));   //gets either question1 or question2 according to the index
             $faq.append($header);
 
@@ -48,12 +48,37 @@ $(document).ready(function () {
         });
     });
 
-    //functionality for FAQ accordion dropdown
-    $('#faq-container').on('click','.accordion-header', function() {   //selecting #faq-container here since its a parent static element, click() has issues working with dynamic elements
-        $(this).next('.accordion-body').slideToggle();
-        $('.accordion-body').not($(this).next('.accordion-body')).slideUp();
-        $(this).children("img").toggleClass('spin');
-        $(this).toggleClass('active');
-        $('.accordion-header').not($(this)).removeClass('active');
+        //functionality for FAQ accordion dropdown
+        $('#faq-container').on('click', '.accordion-header', function() {
+            var $img = $(this).children("img.faq-img");
+            var isActive = $(this).hasClass('active');
+    
+            // Slide up all other accordion bodies and reset their rockets
+            $('.accordion-body').not($(this).next('.accordion-body')).slideUp();
+            $('.accordion-header').not($(this)).removeClass('active').children("img.faq-img")
+                .attr("src", "static/assets/images/rocket-closed.svg")
+                .css("transform", "rotate(0deg)"); // Reset to initial vertical position
+    
+            // Toggle the visibility of the clicked FAQ's answer
+            $(this).next('.accordion-body').slideToggle({
+                start: function() {
+                    $img.attr("src", "static/assets/images/rocket-open.svg")
+                    .css("transform", "scale(1.6)")
+                    
+                },
+                complete: function() {
+                    if (!isActive) {
+                        // Transition
+                        $img.css("transition", "transform 0.3s ease-in-out")
+                        .css("transform", "rotate(45deg) scale(1.6)");
+                    }
+                    else { 
+                        $img.attr("src", "static/assets/images/rocket-closed.svg")
+                        .css("transform", "rotate(0deg)")
+                    }
+                }
+            });
+    
+            $(this).toggleClass('active');
+        });
     });
-});

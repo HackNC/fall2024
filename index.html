@@ -17,19 +17,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
 
     <script src="https://use.fontawesome.com/28dbc0dc5a.js"></script>
     <script src="https://kit.fontawesome.com/95c7888398.js" crossorigin="anonymous"></script>
-    <!-- David's Kit^^ -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="static/js/main.js"></script>
+    <script src="static/js/dolly-zoom.js"></script>
     <script src="static/js/hambuger-menu.js"></script>
     <script src="static/js/navbar.js" defer></script>
     <link rel="stylesheet" href="static/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Titillium+Web:wght@400;600&family=Urbanist:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,15 +38,15 @@
             <li>
                 <a href="#home">
                     <div class="home">
-                        <img src="/static/assets/images/halloween-art/ram.svg" />
-                        HackNC
+                        <span><img src="/static/assets/images/Splash/Copy of HackNC2024 Logo 2.0 .png" />
+                            HackNC</span>
                     </div>
                 </a>
             </li>
             <li id="nav-section"><a href="#about">About</a></li>
             <li id="nav-section"><a href="#faq">FAQ</a></li>
             <li id="nav-section"><a href="#sponsors">Sponsors</a></li>
-            <li id="nav-section"><a href="meet-the-team/index.html">Meet The Team</a></li>
+            <!--<li id="nav-section"><a href="meet-the-team/index.html">Meet The Team</a></li>-->
         </ul>
     </nav>
 
@@ -60,36 +59,70 @@
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
         <a href="#sponsors">Sponsors</a>
-        <a href="meet-the-team/index.html">Meet The Team</a>
+        <!--<a href="meet-the-team/index.html">Meet The Team</a>-->
     </div>
 
     <!-- Logo and header -->
-    <div class="splash">
-        <div class="banner">
-            <img id="banner-graphic" src="/static/assets/images/halloween-art/combined banner graphic.svg"
-                alt="Banner Graphic SVG" />
-            <div class="banner-info">
 
-                <h1 class="tagline"><span class="haunted">HackNC 2024</span><br>Coming Soon!</h1>
-                <!-- <h1 class="techortreat">Tech or Treat</h1> -->
-
-                <h2 class="date">{ November 2 - 3, 2024 }</h2>
-                <button class="involve-button hide-on-med-and-down register-button">
-                    <a href="https://events.mlh.io/events/11447-hacknc" target="_blank">2024 Pre-Registration Link</a></button>
-                <a class="mobile-registration-link register-button" href="https://events.mlh.io/events/11447-hacknc"
-                target="_blank">2024 Pre-Registration Link</a>
-                <button class="involve-button hide-on-med-and-down register-button">
-                    <a href="https://forms.gle/XKBWSz1AeRxMwS2n6" target="_blank">2024 Organizer Interest form</a></button>
-                <a class="mobile-registration-link register-button" href="https://forms.gle/XKBWSz1AeRxMwS2n6"
-                    target="_blank">2024 Organizer Interest form</a>
-
+    <div class="scroll-track">
+        <div class="sticky-div">
+            <div class="space-station-frame">
+                <img id="astronaut-ram" src="/static/assets/images/dolly-zoom-space-art/(border) ram astronaut.svg" />
+                <img id="ctrl-panel"
+                    src="/static/assets/images/dolly-zoom-space-art/(border) left wall control panel.svg" />
+                <img id="pipes" src="/static/assets/images/dolly-zoom-space-art/(border) right wall pipes.svg" />
+                <img id="id-card" src="/static/assets/images/dolly-zoom-space-art/(border) name tag.svg" />
+                <img id="screen" src="/static/assets/images/dolly-zoom-space-art/(border) constellation screen.svg" />
+                <img id="coffee" src="/static/assets/images/dolly-zoom-space-art/(border) space coffee.svg" />
+                <div class="banner-info">
+                    <h2 class="date">{ November 2 - 3, 2024 }</h2>
+                    <button class="involve-button hide-button register-button"><a
+                            href="https://forms.gle/XKBWSz1AeRxMwS2n6" target="_blank">2024 Organizer Interest form</a></button>
+                    <a class="mobile-registration-link register-button" href="https://forms.gle/XKBWSz1AeRxMwS2n6"
+                        target="_blank">2024 Organizer Interest form</a>
+                    <button class="involve-button hide-button register-button"><a
+                        href="https://form.typeform.com/to/gyvYr4EC" target="_blank">HackNC Application 2024</a></button>
+                    <a class="mobile-registration-link register-button" href="https://form.typeform.com/to/gyvYr4EC"
+                        target="_blank">HackNC Application 2024</a>
+                </div>
             </div>
+            <div class="starry-sky">
+                <img id="ram-planet" src="/static/assets/images/Splash/Copy of HackNC2024 Logo 2.0 .png" />
+                <img id="HackNC-text" src="/static/assets/images/Splash/Copy of Text-DarkLightStar-WhiteFill.png" />
+            </div>
+        </div>
+        <div class="sticky-over">
+            This needs some text here for sticky-div to work. This text will be black so invisible and sticky-div set to
+            100vh so covers too.
         </div>
     </div>
 
+    <img id="splash-about-transition" src="/static/assets/images/Transitions/splash to about transition.svg"></img>
+    <a class="nav-anchor" id="about"></a>
+    
+    <!--
+        <div class="splash">
+            <div class="banner">
+                <img id="banner-graphic" src="/static/assets/images/halloween-art/combined banner graphic.svg"
+                    alt="Banner Graphic SVG" />
+                <div class="banner-info">
+
+                    <h1 class="tagline"><span class="haunted">HackNC 2024</span><br>Coming Soon!</h1>
+                    <h1 class="techortreat">Tech or Treat</h1>
+
+                    <h2 class="date">{ November 2 - 3, 2024 }</h2>
+                    <button class="involve-button hide-on-med-and-down register-button"><a
+                            href="https://forms.gle/XKBWSz1AeRxMwS2n6" target="_blank">2024 Organizer Interest form</a></button>
+                    <a class="mobile-registration-link register-button" href="https://forms.gle/XKBWSz1AeRxMwS2n6"
+                        target="_blank">2024 Organizer Interest form</a>
+
+                </div>
+            </div>
+        </div>
+    -->
+
     <!-- About -->
     <div class="section about">
-        <a class="nav-anchor" id="about"></a>
         <div class="container">
             <div class="about-info">
                 <!-- Images -->
@@ -108,12 +141,19 @@
                                 target="_blank">Explore Past Projects</a></button>
                     </div>
                 </div>
-                <img id="about-graphic" src="/static/assets/images/halloween-art/combined about graphic.svg"
+                <img id="about-graphic" src="/static/assets/images/About/HACKNC planet gif final.gif"
                     alt="Raven, Full Moon, and Pumpkin SVG" />
 
             </div>
         </div>
     </div>
+
+    <!-- About to FAQ Transition -->
+     <div class="about-to-faq">
+        <img class="mars" src="/static/assets/images/Transitions/Mars.svg" alt="mars">
+        <img class="saturn" src="/static/assets/images/Transitions/Saturn.svg" alt="saturn">
+        <img class="neptune" src="/static/assets/images/Transitions/Neptune.svg" alt="neptune">
+     </div>
 
     <!-- FAQ -->
     <div class="section faq">
@@ -139,7 +179,7 @@
             <br>
 
             <div class="sponsor-container">
-                <h1 class="center sponsorFooter">Coming Soon!</h1>
+                <!--<h1 class="center sponsorFooter">Coming Soon!</h1>-->
                 <!-- <a target="_blank" href='https://www.principal.com/about-us/careers/internships'>
                     <img alt="Principal logo" id="Principal-logo" class="sponsor-image"
                         src=''></a>
@@ -153,16 +193,28 @@
                     href='https://www.deere.com/en/our-company/john-deere-careers/jobs-for-students/internships-and-part-time-students/'>
                     <img alt="John Deere logo" id="JohnDeere-logo" class='sponsor-image'
                         src=''></a>
-                <a target="_blank" href='https://www.infosys.com/'>
-                    <img alt="Infosys logo" id="Infosys-logo" class='sponsor-image'
-                        src=''></a>
                 <a target="_blank" href='https://www.captechconsulting.com/careers/student-opportunities'>
                     <img alt="CapTech logo" id="CapTech-logo" class='sponsor-image'
-                        src=''></a>
+                        src=''></a> -->
                 <a target="_blank" href='https://www.bandwidth.com/careers/internship/'>
                     <img alt="Bandwidth logo" id="Bandwidth-logo" class='sponsor-image'
-                        src=''></a>
-                <a target="_blank" href='https://jobs.cisco.com/jobs/SearchJobs/internship'>
+                        src='/static/assets/images/sponsors/Bandwidth.png'></a>
+                <a target="_blank" href='https://www.capitalonecareers.com/'>
+                    <img alt="CapitalOne logo" id="CapitalOne-logo" class='sponsor-image'
+                        src='/static/assets/images/sponsors/capitalone.png'></a>
+                <a target="_blank" href='https://www.infosys.com/'>
+                    <img alt="Infosys logo" id="Infosys-logo" class='sponsor-image'
+                        src='/static/assets/images/sponsors/infosys.png'></a>
+                <a target="_blank" href='https://jobs.fidelity.com/'>
+                    <img alt="Fidelity logo" id="Fidelity-logo" class='sponsor-image'
+                        src='/static/assets/images/sponsors/fidelity.png'></a>
+                <a target="_blank" href='https://www.lowes.com/'>
+                    <img alt="Lowes logo" id="Lowes-logo" class='sponsor-image'
+                        src='/static/assets/images/sponsors/lowes.png'></a>
+                <a target="_blank" href='https://www.pendo.io/'>
+                    <img alt="Pendo logo" id="Pendo-logo" class='sponsor-image'
+                        src='/static/assets/images/sponsors/pendo.png'></a>
+                <!--<a target="_blank" href='https://jobs.cisco.com/jobs/SearchJobs/internship'>
                     <img alt="Cisco logo" id="Cisco-logo" class='sponsor-image'
                         src=''></a>
                 <a target="_blank" href='https://www.revvity.com/'>
@@ -178,47 +230,49 @@
                     <img alt="PSTC logo" id="PSTC-logo" class='sponsor-image'
                         src=''></a>
                 -->
+                
             </div>
         </div>
     </div>
 
     </main>
+    
+    
 
-    <!-- Footer -->
-    <footer class="section">
-        <div class="container center">
-            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">
-                <p>MLH Code of Conduct</p>
-            </a>
-
-            <div class="contact-info">
-                <a aria-label="HackNC email" target="_blank" href="mailto:hello@hacknc.com">
-                    <i class="fa fa-envelope-square fa-2x"></i></a>
-
-                <a aria-label="HackNC facebook" target="_blank" href="https://www.facebook.com/thehacknc/">
-                    <i class="fa fa-facebook-square fa-2x"></i></a>
-
-                <a aria-label="HackNC twitter" target="_blank" href="https://twitter.com/thehacknc">
-                    <i class="fa fa-twitter-square fa-2x"></i></a>
-
-                <a aria-label="HackNC instagram" target="_blank" href="https://www.instagram.com/thehacknc/">
-                    <i class="fa fa-instagram fa-2x"></i></a>
-
-                <a aria-label="HackNC linkedin" target="_blank" href="https://www.linkedin.com/company/thehacknc/">
-                    <i class="fa fa-linkedin fa-2x"></i></a>
+    <footer>
+        <div class="background-container">
+            <div class="footer-content">
+                <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">
+                    <p>MLH Code of Conduct</p>
                 </a>
+    
+                <div class="contact-info">
+                    <a aria-label="HackNC email" target="_blank" href="mailto:hello@hacknc.com">
+                        <i class="fa fa-envelope-square fa-2x"></i></a>
+    
+                    <a aria-label="HackNC facebook" target="_blank" href="https://www.facebook.com/thehacknc/">
+                        <i class="fa fa-facebook-square fa-2x"></i></a>
+    
+                    <a aria-label="HackNC twitter" target="_blank" href="https://twitter.com/thehacknc">
+                        <i class="fa fa-twitter-square fa-2x"></i></a>
+    
+                    <a aria-label="HackNC instagram" target="_blank" href="https://www.instagram.com/thehacknc/">
+                        <i class="fa fa-instagram fa-2x"></i></a>
+    
+                    <a aria-label="HackNC linkedin" target="_blank" href="https://www.linkedin.com/company/thehacknc/">
+                        <i class="fa fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+    
+                <div>
+                    <u style="color: #FFF9D6">© HackNC 2024 </u>
+                </div>
             </div>
-
-            <u>© HackNC 2024 </u>
         </div>
     </footer>
 
-    <a id="mlh-trust-badge"
-        style="display:block;max-width:100px;min-width:60px;position:fixed;right:25px;top:0;width:10%;z-index:10000"
-        href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=black"
-        target="_blank"><img
-            src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-black.svg"
-            alt="Major League Hacking 2024 Hackathon Season" style="width:100%"></a>
+    <a id="mlh-trust-badge" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=black" target="_blank">
+        <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-black.svg" alt="Major League Hacking 2025 Hackathon Season">
+    </a>
 </body>
-
 </html>

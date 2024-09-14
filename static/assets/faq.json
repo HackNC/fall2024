@@ -1,7 +1,7 @@
 [
     {
         "question1": "What is a hackathon?",
-        "answer1": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff. There will also be opportunities to win cool prizes and network with our sponsors."
+        "answer1": "A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool projects. There will also be opportunities to win fun prizes and network with our sponsors."
     },
     {
         "question2": "Is this hackathon in-person or hybrid?",
@@ -9,7 +9,7 @@
     },
     {
         "question1": "Can I still register?",
-        "answer1": "Yes! Registration will remain open until the day of the event! (Until Friday, Oct 27th)"
+        "answer1": "Yes! Registration will be open until Sunday, Oct 27th."
     },
     {
         "question2": "Do I have to be present all day? Do I have to show up on Friday?",
@@ -25,7 +25,7 @@
     },
     {
         "question1": "How do teams work?",
-        "answer1": "Teams can be organized prior to HackNC or during the event itself. We have a team building event on Friday (Oct 27th). If you are already in a team, then you’re all set! You just have to write your members’ names on the Devpost submission. We don’t hold a strict limit on your team size, but we strongly recommend around 3-4 members. Prizes will be limited to a maximum of 4 members. "
+        "answer1": "Teams can be organized prior to HackNC or during the event itself. If you are already in a team, then you’re all set! You just have to write your members’ names on the Devpost submission. If not, that's completely fine! We have a team building event on Friday (Nov 1st), where you can meet other participants and form your teams. We don’t hold a strict limit on your team size, but we strongly recommend around 3-4 members. Prizes will be limited to a maximum of 4 members. "
     },
     {
         "question2": "Can I do a hardware hack?",
@@ -33,7 +33,7 @@
     },
     {
         "question1": "Can I use old code?",
-        "answer1": "You may use all the publicly available code and APIs that you want, but the code you will be judged on at the end of the hackathon must be new."
+        "answer1": "You may use all publicly available code and APIs, but the final submitted code must be original."
     },
     {
         "question2": "When will we get a schedule for the event?",
@@ -49,11 +49,11 @@
     },
     {
         "question1": "Where do I park?",
-        "answer1": "Parking will be free over the weekend. Please find availability in places like Rams Deck, Craige Deck, or Cobb Deck."
+        "answer1": "Parking will be free over the weekend. Please find availability in Rams Deck, Craige Deck, or Cobb Deck."
     },
     {
         "question2": "I’m coming to HackNC from afar. Are there reimbursements for travel?",
-        "answer2": "Regrettably, we are unable to provide travel reimbursements this year due to budget limitations. We’d love to see you here, though!"
+        "answer2": "Unfortunately, we are unable to provide travel reimbursements this year due to budget limitations."
     },
     {
         "question1": "Do I need to bring a form of ID to the event?",
