@@ -15,84 +15,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/28dbc0dc5a.js"></script>
     <script src="https://kit.fontawesome.com/95c7888398.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../static/css/live.css">
-    <style>
-        h1 {
-            text-align: center;
-            color:#bb5c0e;
-        }
-        .slider {
-            position: relative;
-            overflow: visible; 
-            padding: 0 30px;
-        }
-
-        .group-cover {
-            position: relative;
-            overflow: hidden; 
-        }
-
-        .slide-group {
-            display: flex;
-            transition: transform 0.5s;
-            overflow: visible; 
-        }
-
-        .slider-item {
-            flex: 0 0 300px; 
-            padding: 10px;
-        }
-
-        .slider-nav {
-            position: absolute;
-            top: 42%;
-            /* transform: translateY(-50%); */
-            cursor: pointer;
-            z-index: 2;
-            width: 30px;
-            height: 30px;
-            background-color: rgba(58, 51, 82, 0.7);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            pointer-events: auto; 
-        }
-
-        .slider-nav.prev {
-            left: -10px;
-        }
-
-        .slider-nav.next {
-            right: -10px;
-        }
-
-        .slider-nav i {
-            color: #ffffff;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../static/css/meet-the-team.css">
+    <script src="/static/js/meet-the-team.js"></script>
+    <script src="/static/js/navbar.js"></script>
 </head>
 
-<body style="background-color: #3A3352; color: #ffffff;">
-
+<body>
     <!-- Navigation Bar -->
-    <nav class="hide-on-med-and-down" id="navbar">
+    <nav class="hide-on-med-and-down" id="navbar">  <!--FIX THIS-->
         <ul>
             <li>
-                <a href="#home">
+                <a href="../index.html">
                     <div class="home">
                         <img src="/static/assets/images/halloween-art/ram.svg" />
                         HackNC
                     </div>
                 </a>
             </li>
+            <li id="nav-section"><a href="https://hacknc.com/live/">Live</a></li>
             <li id="nav-section"><a href="../index.html#about">About</a></li>
             <li id="nav-section"><a href="../index.html#faq">FAQ</a></li>
             <li id="nav-section"><a href="../index.html#sponsors">Sponsors</a></li>
-            <li id="nav-section"><a href="">Meet The Team</a></li>
         </ul>
     </nav>
+
+    <!-- Hamburger Menu -->
+    <input type="checkbox" class="hamburger-btn fa-solid fa-bars" id="hamburger-btn" />
+
+    <div class="hamburger-menu">
+        <a href="../index.html">Home</a>
+        <a href="https://hacknc.com/live/">Live</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="../index.html#sponsors">Sponsors</a>
+    </div>
+
 
     <main id="content container">
         <h1>Meet The Team!</h1>
@@ -250,15 +207,8 @@
                 </div>
             </div>
 
-            <div id="home-link" class="card full-width">
-                <a href="/" class="home-link">https://hacknc.com/</a>
-            </div>
-
         </div>
     </main>
-
-    <script src="/static/js/meet-the-team.js"></script>
-
 </body>
 
 </html>

@@ -90,12 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             state.currentSlide = Math.max(0, state.totalSlides - visibleSlides);
         }
         updateSliderPosition(index);
-
-        if (visibleSlides < 1) {
-            state.slider.parentElement.style.display = 'none';
-        } else {
-            state.slider.parentElement.style.display = 'block';
-        }
+        state.slider.parentElement.style.display = 'block';
     };
 
     sliders.forEach((_, index) => {
