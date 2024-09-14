@@ -569,6 +569,11 @@ nav ul a:hover::before {
   #mlh-trust-badge {
     max-width: 80px;
   }
+
+  nav li:last-child {
+    margin-right: 120px;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
