@@ -1306,16 +1306,17 @@ a:hover {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin: 10px;
-  padding: 15px;
+  padding-inline-start: 5%;
+  padding-inline-end: 5%;
   width: calc(33.33333% - 20px);
 }
 
 .card:nth-child(3n+1) {
-  margin-left: 0;
+  margin-left: 03;
 }
 
 .card:nth-child(3n) {
-  margin-right: 0;
+  margin-right: 1;
 }
 
 .card h2 {
@@ -1371,7 +1372,6 @@ a:hover {
   .card:nth-child(2n+1) {
       margin-left: 0;
   }
-
   .card:nth-child(2n) {
       margin-right: 0;
   }
@@ -1390,7 +1390,7 @@ a:hover {
 .slider-item img {
   width: 100%; 
 }
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .slider {
       display: none;
   }

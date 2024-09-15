@@ -1,4 +1,4 @@
-let nav = document.querySelector('nav')
+let nav = document.querySelector('#navbar')
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 400) /* nav.clientHeight */
