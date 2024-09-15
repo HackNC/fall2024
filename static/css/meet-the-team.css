@@ -1,23 +1,33 @@
 * {
-    font-family: 'Lora', serif;
+    font-family: 'Urbanist', sans-serif;
+    box-sizing: border-box;
   }
   
   :root {
-    --main-text-color: #292348;
-    --hamburger-back-color: #3c2654;
+    --main-text-color: #FFF9D6;
+    --main-bg-color: #0A0058;
+    --hover-bg-color: #0A0058;
+    --hamburger-back-color: #030139;
   }
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #01001d; 
+    color: #FFF9D6;
+    background-image: url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg"), url("/static/assets/images/aurora.svg"), url("/static/assets/images/Astronaut.svg");
+    background-position: top, center bottom, left top;
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: cover, cover, cover;
+    -webkit-background-size: cover, cover, cover;
+    -moz-background-size: cover, cover, cover;
+    -o-background-size: cover, cover, cover;
+}
 
 /* Add responsive styles for smaller screens if needed */
   @media only screen and (max-width: 1000px) {
     html, body {
-      background-color: #3c2654;
-      background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/faq\ smoke.svg");
-      background-position: top, bottom;
-      background-repeat: no-repeat, no-repeat;
-      background-size: contain, contain;
-      -webkit-background-size: contain, contain;
-      -moz-background-size: contain, contain;
-      -o-background-size: contain, contain;
       padding-bottom: 0px;
       font-size: 16px;
       margin: 0;
@@ -25,15 +35,8 @@
   }
   
   @media only screen and (min-width: 1001px) and (max-width: 2000px) {
-  
     html,
     body {
-      background-color: #3c2654;
-      background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/faq\ smoke.svg");
-  
-      background-position: left top, bottom;
-      background-repeat: no-repeat, no-repeat;
-      background-size: 1200px, contain;
       padding-bottom: 0px;
       font-size: 16px;
       margin: 0;
@@ -41,23 +44,40 @@
   }
   
   @media only screen and (min-width: 2001px) {
-  
     html,
     body {
-      background-color: #3c2654;
-      background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/faq\ smoke.svg");
-  
-      background-position: left top, center bottom;
-      background-repeat: no-repeat, no-repeat;
-      background-size: 1200px, contain;
-      -webkit-background-size: 1200px, contain;
-      -moz-background-size: 1200px, contain;
-      -o-background-size: 1200px, contain;
       padding-bottom: 0px;
       font-size: 16px;
       margin: 0;
     }
   }
+
+
+  a {
+    color: #0A0058;
+  }
+  
+  a:hover {
+      text-decoration: underline;
+  }
+    
+  
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 4rem;
+    color:#FFF9D6;
+    text-transform: uppercase;
+  }
+  
+  @media only screen and (max-width: 993px) {
+      h1 {
+          font-size: 7.5vw;
+          margin-block-start: 0px;
+      }
+  } 
+  
   
   h2 {
     text-align: center;
@@ -66,6 +86,11 @@
   h3 {
     text-align: center;
   }
+  
+  p {
+  font-size: 16px;
+  }
+
   
   .container {
     width: 80%;
@@ -94,50 +119,8 @@
     }
   }
 
-* {
-    box-sizing: border-box;
-  }
-
-body {
-    font-family: 'Lora', serif;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-color: #ffffff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-  
-
-h1 {
-    text-align: center;
-    color:#bb5c0e;
-}
-
-@media only screen and (max-width: 993px) {
-    h1 {
-        font-size: 10vw;
-        margin-block-start: 0px;
-    }
-}
-  
-p {
-font-size: 16px;
-}
-
-body {
-    background-color: #3A3352; 
-    color: #ffffff;
-    margin: 0;
-}
-
 .card {
-    background-color: #D5CAEF;
+    background-color: #0A0058;
     position: relative;
     flex: 0 0 47.5%;
     box-sizing: border-box;
@@ -170,7 +153,7 @@ body {
   }
   
   .card {
-    background-color: #ffffff;
+    background-color: #0A0058;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -200,11 +183,11 @@ body {
   }
   
   .lilac {
-    background-color: #3A3352;
+    background-color: #030139;
   }
   
   .lilac h2 {
-    color: #ffffff;
+    color: #FFED7B;
   }
   
   .home-link {
@@ -244,18 +227,12 @@ body {
         margin-right: 0;
     }
   }
-
-  .slider {
-    background-color: #3A3352; 
-  }
   
   .info {
     text-align: center;
     padding: 0 10px;
   }
-  .home-link{
-    color: #3A3352;
-  }
+  
   .slider-item img {
     width: 300px; 
     height: 300px;
@@ -298,17 +275,21 @@ body {
 .slider-nav {
     position: absolute;
     top: 42%;
-    /* transform: translateY(-50%); */
+    transform: translateY(-50%); 
     cursor: pointer;
     z-index: 2;
     width: 30px;
     height: 30px;
-    background-color: rgba(58, 51, 82, 0.7);
+    background-color: #030139;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     pointer-events: auto; 
+}
+
+.slider-nav:hover {
+  background-color: #01001d;
 }
 
 .slider-nav.prev {
@@ -320,17 +301,16 @@ body {
 }
 
 .slider-nav i {
-    color: #ffffff;
+    color: #FFF9D6;
 }
 
 /* Nav Bar */
 nav {
     width: 100%;
     height: 64px;
-    background-color: #292348;
+    background-color: #030139;
     top: 0;
     z-index: 99;
-    background-color: #292348;
     box-shadow: 0px 0px 8px #000000;
     text-align: center;
     position: sticky;
@@ -370,7 +350,7 @@ nav {
     font-weight: bold;
     display: inline-block;
     text-decoration: none;
-    color: #d5cbef;
+    color: #FFF9D6;
     padding: 0px 10px;
     height: 64px;
     font-size: 1.5rem;
@@ -379,7 +359,7 @@ nav {
   }
   
   nav ul a.selected {
-    color: #4a3974;
+    color: #FFED7B;
   }
 
   @media only screen and (max-width: 993px) {
@@ -392,7 +372,7 @@ nav {
 .mobile-nav {
     display: flex !important;
     justify-content: space-between;
-    background-color: #d5cbef;
+    background-color: #030139;
     box-shadow: none;
     position: relative;
     /* height: 50%; */
@@ -415,7 +395,7 @@ nav {
 
 #mobile-nav-div {
     display: none;
-    background-color: #D5CAEF;
+    background-color: #030139;
     position: fixed;
     top: 0;
     left: 0;
@@ -439,7 +419,7 @@ nav {
   
   #mobile-nav-div a {
     text-decoration: none;
-    color: #4f3426;
+    color: #ffffff;
     font-size: 5vw;
   }
   
@@ -458,7 +438,7 @@ nav {
     visibility: hidden;
     z-index: 999;
     position: fixed;
-    top: 3vw;
+    top: 1.5vw;
     right: 3vw;
     font-size: 7vw;
   }
@@ -485,9 +465,9 @@ nav {
   }
   
   .hamburger-menu * {
-    color: #d5cbef;
+    color: #FFF9D6;
     text-decoration: none;
-    font-size: 0.5cm;
+    font-size: 2rem;
   }
   
   @media only screen and (max-width: 993px) {
