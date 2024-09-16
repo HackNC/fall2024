@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (nextButton) {
             nextButton.addEventListener('click', () => {
-                console.log(`Next clicked for slider ${index}`);
+                /* console.log(`Next clicked for slider ${index}`); */
                 nextSlide(index);
             });
         }
         if (prevButton) {
             prevButton.addEventListener('click', () => {
-                console.log(`Prev clicked for slider ${index}`);
+                /* console.log(`Prev clicked for slider ${index}`); */
                 prevSlide(index);
             });
         }
@@ -72,12 +72,12 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log((sliderWidth/slideWidth) - visibleSlides)
         if (state.currentSlide == state.totalSlides - visibleSlides){
             const translateX = -(state.totalSlides*slideWidth - sliderWidth);
-            console.log(`Slider ${index} translateX: ${translateX}px`);
+            /*console.log(`Slider ${index} translateX: ${translateX}px`);*/
             state.slider.style.transform = `translateX(${translateX}px)`;
         }
         else{
             const translateX = -(state.currentSlide * slideWidth);
-            console.log(`Slider ${index} translateX: ${translateX}px`);
+            /*console.log(`Slider ${index} translateX: ${translateX}px`);*/
             state.slider.style.transform = `translateX(${translateX}px)`;
         }
     };
