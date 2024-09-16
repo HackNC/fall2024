@@ -6,7 +6,7 @@
   --main-text-color: #FFF9D6;
   --main-bg-color: #0A0058;
   --hover-bg-color: #0A0058;
-  --hamburger-back-color: #0A0058;
+  --hamburger-back-color: #030139;
 }
 
 html,
@@ -117,12 +117,12 @@ nav {
   position: fixed;
   background: transparent;
   transition: all 0.2s ease;
-  -webkit-text-stroke-color: #0A0058;
+  -webkit-text-stroke-color: #030139;
   -webkit-text-stroke-width: 0px;
 }
 
 nav.sticky {
-  background-color: #0A0058;
+  background-color: #030139;
   -webkit-text-stroke-width: 0px;
 }
 
@@ -133,7 +133,7 @@ nav .home {
 }
 
 nav .home span {
-  background-color: #0A0058;
+  background-color: #030139;
   border-radius: .5em;
   height: 30px;
   display: flex;
@@ -207,7 +207,7 @@ nav ul a.mobile-registration-link:hover {
   -webkit-transform: scale(1.05) translateY(-50%);
   transform: scale(1.05) translateY(-50%);
   transition: transform 0.3s;
-  background-color: #0A0058;
+  background-color: #030139;
   color: #FFF9D6;
   position: relative;
   top: 50%;
@@ -238,7 +238,7 @@ nav ul a:hover::before {
 }
 
 #nav-section {
-  background-color: #0A0058;
+  background-color: #030139;
   border-radius: .5em;
   margin-top: -15px;
 }
@@ -625,6 +625,7 @@ nav ul a:hover::before {
 /* Splash to About section transition */
 
 #splash-about-transition {
+  background: url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg"), linear-gradient(#000000,#01001d);
   position: relative;
   width: 100vw;
   height: 30vh;
@@ -664,7 +665,7 @@ nav ul a:hover::before {
 
 /* About */
 .about {
-  background: #0A0058 url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg") no-repeat center;
+  background: #01001d url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg") no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -812,7 +813,7 @@ nav ul a:hover::before {
 /* About to FAQ */
 .about-to-faq {
   height: 20vh;
-  background: url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg") center, linear-gradient(#0A0058,#4017D8);
+  background: url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg") center, linear-gradient(#01001d,#0A0058);
 }
 
 .mars {
@@ -844,7 +845,7 @@ nav ul a:hover::before {
 
 /* FAQ */
 .faq {
-  background: #4017D8 url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg") no-repeat center;
+  background: #0A0058 url("/static/assets/images/dolly-zoom-space-art/Stars transparent.svg") no-repeat center;
   background-size: contain;
   -webkit-background-size: contain;
   -moz-background-size: contain;
@@ -925,7 +926,7 @@ nav ul a:hover::before {
 .active,
 .accordion-header:hover {
   cursor: pointer;
-  background-color: #0A0058;
+  background-color: #01001d;
 }
 
 .accordion-body {
@@ -974,7 +975,7 @@ nav ul a:hover::before {
 
 /* Sponsors */
 .sponsors {
-  background: linear-gradient(rgba(64,23,216,1) 0%, rgba(0,100,255,1) 80%, rgba(99,128,255,1) 100%);;
+  background: linear-gradient(#0A0058 0%, #1800cd 80%, #6450ff 100%);
   background-size: contain;
   -webkit-background-size: contain;
   -moz-background-size: contain;
@@ -1087,7 +1088,7 @@ nav ul a:hover::before {
 }
 
 footer {
-  background: #6380FF;
+  background: #6450ff;
   z-index: 1;
   color: #FFF9D6;
   font-size: 1.3rem;
