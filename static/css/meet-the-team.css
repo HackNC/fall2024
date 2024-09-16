@@ -11,7 +11,7 @@
   }
 
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Titillium Web', serif;
     margin: 0;
     padding: 0;
     background-color: #01001d; 
@@ -154,9 +154,9 @@ body {
   
   .card {
     background-color: #0A0058;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 1px #FFED7B;
+    margin: 15px;
     padding-inline-start: 5%;
     padding-inline-end: 5%;
     width: calc(33.33333% - 20px);
@@ -375,7 +375,6 @@ nav {
     background-color: #030139;
     box-shadow: none;
     position: relative;
-    /* height: 50%; */
   }
   
   @media only screen and (max-width: 993px) {
