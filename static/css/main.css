@@ -9,6 +9,10 @@
   --hamburger-back-color: #030139;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 html,
 body {
   font-size: 16px;
