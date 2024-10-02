@@ -93,12 +93,11 @@
 
   html,
   body {
-    background-color: #3c2654;
-    background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/faq\ smoke.svg");
-
-    background-position: left top, bottom;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 1200px, contain;
+    background-color: black;
+    background-image: url("../assets/images/star-pattern.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-bottom: 0px;
     font-size: 16px;
     margin: 0;
@@ -109,20 +108,31 @@
 
   html,
   body {
-    background-color: #3c2654;
-    background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/faq\ smoke.svg");
-
-    background-position: left top, center bottom;
+    background-color: black;
+    background-image: url("../assets/images/star-pattern.svg");
+    background-position: center;
     background-repeat: no-repeat, no-repeat;
-    background-size: 1200px, contain;
-    -webkit-background-size: 1200px, contain;
-    -moz-background-size: 1200px, contain;
-    -o-background-size: 1200px, contain;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     padding-bottom: 0px;
     font-size: 16px;
     margin: 0;
   }
 }
+
+
+#aurora-graphic {
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  z-index: 1; 
+  opacity: 0.2; /* Adjust transparency if needed */
+}
+
+
 
 h2 {
   text-align: center;
@@ -157,6 +167,9 @@ h3 {
   .container {
     width: 90%;
   }
+  #aurora-graphic {
+    display: none;
+}
 }
 
 h1 {
@@ -189,7 +202,6 @@ nav {
   background-color: #292348;
   top: 0;
   z-index: 99;
-  background-color: #292348;
   box-shadow: 0px 0px 8px #000000;
   text-align: center;
   position: sticky;
