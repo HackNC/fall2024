@@ -75,14 +75,15 @@
 
   html,
   body {
-    background-color: #3c2654;
-    background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/faq\ smoke.svg");
-    background-position: top, bottom;
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain, contain;
-    -webkit-background-size: contain, contain;
-    -moz-background-size: contain, contain;
-    -o-background-size: contain, contain;
+    background-color: #01001d; 
+    color: #FFF9D6;
+    background-image: url("../assets/images/star-pattern.svg"), url("../assets/images/aurora.svg"), url("../assets/images/aurora-background.svg");
+    background-position: top, center bottom, left top;
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: cover, cover, cover;
+    -webkit-background-size: cover, cover, cover;
+    -moz-background-size: cover, cover, cover;
+    -o-background-size: cover, cover, cover;
     padding-bottom: 0px;
     font-size: 16px;
     margin: 0;
@@ -93,11 +94,15 @@
 
   html,
   body {
-    background-color: black;
-    background-image: url("../assets/images/star-pattern.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #01001d; 
+    color: #FFF9D6;
+    background-image: url("../assets/images/star-pattern.svg"), url("../assets/images/aurora.svg"), url("../assets/images/aurora-background.svg");
+    background-position: top, center bottom, left top;
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: cover, cover, cover;
+    -webkit-background-size: cover, cover, cover;
+    -moz-background-size: cover, cover, cover;
+    -o-background-size: cover, cover, cover;
     padding-bottom: 0px;
     font-size: 16px;
     margin: 0;
@@ -108,29 +113,21 @@
 
   html,
   body {
-    background-color: black;
-    background-image: url("../assets/images/star-pattern.svg");
-    background-position: center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-color: #01001d; 
+    color: #FFF9D6;
+    background-image: url("../assets/images/star-pattern.svg"), url("../assets/images/aurora.svg"), url("../assets/images/aurora-background.svg");
+    background-position: top, center bottom, left top;
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: cover, cover, cover;
+    -webkit-background-size: cover, cover, cover;
+    -moz-background-size: cover, cover, cover;
+    -o-background-size: cover, cover, cover;
     padding-bottom: 0px;
     font-size: 16px;
     margin: 0;
   }
 }
 
-
-#aurora-graphic {
-  position: absolute;
-  bottom: 0; 
-  left: 0;
-  width: 100%;
-  z-index: 1; 
-  opacity: 0.2; /* Adjust transparency if needed */
-}
 
 
 
@@ -167,9 +164,6 @@ h3 {
   .container {
     width: 90%;
   }
-  #aurora-graphic {
-    display: none;
-}
 }
 
 h1 {
