@@ -1,11 +1,15 @@
 * {
-  font-family: 'Lora', serif;
+  font-family: 'Urbanist', sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
-  --main-text-color: #292348;
-  --hamburger-back-color: #3c2654;
+  --main-text-color: #FFF9D6;
+  --main-bg-color: #0A0058;
+  --hover-bg-color: #0A0058;
+  --hamburger-back-color: #030139;
 }
+
 
 .center {
   text-align: center;
@@ -124,12 +128,11 @@
 
 
 #aurora-graphic {
-  position: absolute;
-  bottom: 0; 
-  left: 0;
-  width: 100%;
-  z-index: 1; 
-  opacity: 0.2; /* Adjust transparency if needed */
+  position: absolute;  /* This pins it relative to its nearest positioned ancestor */
+  bottom: 0;           /* Makes sure it's pinned to the bottom of the page */
+  left: 0;             /* Start from the left side */
+  width: 100%;         /* Make sure it covers the full width of the page */
+  opacity: 1;          /* Ensure it's fully opaque */
 }
 
 
@@ -173,12 +176,14 @@ h3 {
 }
 
 h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
   letter-spacing: 0.075em;
-  margin-bottom: 0px;
-  margin-top: 0px;
   text-align: center;
-  font-size: 4vw;
-  color: #3f2c14;
+  font-size: 4rem; 
+  text-transform: uppercase;
+  color: #FFF9D6; 
+  margin: 0;
 }
 
 @media only screen and (max-width: 993px) {
@@ -189,6 +194,7 @@ h1 {
 
 p {
   font-size: 16px;
+  color: #FFF9D6;
 }
 
 .section {
@@ -199,7 +205,7 @@ p {
 nav {
   width: 100%;
   height: 64px;
-  background-color: #292348;
+  background-color: #030139;
   top: 0;
   z-index: 99;
   box-shadow: 0px 0px 8px #000000;
@@ -241,7 +247,7 @@ nav ul a {
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
-  color: #d5cbef;
+  color: #FFF9D6;
   padding: 0px 10px;
   height: 64px;
   font-size: 1.5rem;
@@ -250,11 +256,16 @@ nav ul a {
 }
 
 nav ul a.selected {
-  color: #4a3974;
+  color: #FFED7B;
+}
+
+#test {
+  background-color: rgb(3, 1, 57);
+
 }
 
 .card {
-  background-color: #D5CAEF;
+  background-color: rgb(3, 1, 57);
   position: relative;
   flex: 0 0 47.5%;
   box-sizing: border-box;
@@ -616,7 +627,7 @@ nav ul a.selected {
 #links p {
   font-size: 20px;
   margin: 3px 0 0 0;
-  color: #4f3426;
+  color: #FFF9D6;
 }
 
 #discord-logo,
@@ -834,7 +845,14 @@ th {
   top: 1px;
 }
 
+.link {
+  color: #A49EE0; 
+  text-decoration: underline;
+
+}
+
 .link:hover {
+  color: #FFED7B;
   text-decoration: underline;
 }
 
@@ -1290,10 +1308,12 @@ button.secondary:focus {
 }
 
 body {
-  font-family: 'Lora', serif;
-  margin: 0;
-  padding: 0;
+  position: relative;
+  background-color: #01001d;
+  font-size: 16px;
+  color: #FFF9D6;
 }
+
 
 a {
   color: #ffffff;
@@ -1314,13 +1334,12 @@ a:hover {
 }
 
 .card {
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  padding-inline-start: 5%;
-  padding-inline-end: 5%;
-  width: calc(33.33333% - 20px);
+  background-color: #0A0058;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 1px #FFED7B;
+  padding: 15px;
+  margin: 15px;
+  flex: 0 0 47.5%;
 }
 
 .card:nth-child(3n+1) {
@@ -1407,4 +1426,3 @@ a:hover {
       display: none;
   }
 }
-
