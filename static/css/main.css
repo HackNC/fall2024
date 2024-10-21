@@ -1179,6 +1179,8 @@ footer img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  top: 50px;
 }
 
 .footer-left {
