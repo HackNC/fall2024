@@ -1042,7 +1042,8 @@ nav ul a:hover::before {
 #Pearson-logo,
 #Infosys-logo,
 #Cisco-logo,
-#CapitalOne-logo {
+#CapitalOne-logo,
+#nutanix-logo {
   height: 4rem;
 }
 
@@ -1061,7 +1062,8 @@ nav ul a:hover::before {
 }
 
 #Zilliz-logo,
-#Pendo-logo {
+#Pendo-logo,
+#stand-out-stickers-logo {
   height: 8rem;
 }
 
