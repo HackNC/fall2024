@@ -79,14 +79,13 @@
 
   html,
   body {
-    background-color: #3c2654;
-    background-image: url("/static/assets/images/halloween-art/bg\ banner\ smoke.svg"), url("/static/assets/images/halloween-art/faq\ smoke.svg");
-    background-position: top, bottom;
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain, contain;
-    -webkit-background-size: contain, contain;
-    -moz-background-size: contain, contain;
-    -o-background-size: contain, contain;
+    font-family: 'Titillium Web', serif;
+    background-color: #01001d; 
+    color: #FFF9D6;
+    background-image: url("../assets/images/star-pattern.svg"), url("/static/assets/images/aurora.svg");
+    background-position: center, center bottom;
+    background-repeat: repeat, no-repeat;
+    background-size: cover, cover;
     padding-bottom: 0px;
     font-size: 16px;
     margin: 0;
@@ -97,11 +96,13 @@
 
   html,
   body {
-    background-color: black;
-    background-image: url("../assets/images/star-pattern.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: 'Titillium Web', serif;
+    background-color: #01001d; 
+    color: #FFF9D6;
+    background-image: url("../assets/images/star-pattern.svg"), url("/static/assets/images/aurora.svg");
+    background-position: center, center bottom;
+    background-repeat: repeat, no-repeat;
+    background-size: cover, cover;
     padding-bottom: 0px;
     font-size: 16px;
     margin: 0;
@@ -112,27 +113,17 @@
 
   html,
   body {
-    background-color: black;
-    background-image: url("../assets/images/star-pattern.svg");
-    background-position: center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    font-family: 'Titillium Web', serif;
+    background-color: #01001d; 
+    color: #FFF9D6;
+    background-image: url("../assets/images/star-pattern.svg"), url("/static/assets/images/aurora.svg");
+    background-position: center, center bottom;
+    background-repeat: repeat, no-repeat;
+    background-size: cover, cover;
     padding-bottom: 0px;
     font-size: 16px;
     margin: 0;
   }
-}
-
-
-#aurora-graphic {
-  position: absolute;  /* This pins it relative to its nearest positioned ancestor */
-  bottom: 0;           /* Makes sure it's pinned to the bottom of the page */
-  left: 0;             /* Start from the left side */
-  width: 100%;         /* Make sure it covers the full width of the page */
-  opacity: 1;          /* Ensure it's fully opaque */
 }
 
 
@@ -170,9 +161,6 @@ h3 {
   .container {
     width: 90%;
   }
-  #aurora-graphic {
-    display: none;
-}
 }
 
 h1 {
@@ -259,13 +247,9 @@ nav ul a.selected {
   color: #FFED7B;
 }
 
-#test {
-  background-color: rgb(3, 1, 57);
-
-}
 
 .card {
-  background-color: rgb(3, 1, 57);
+  background-color: #030139;
   position: relative;
   flex: 0 0 47.5%;
   box-sizing: border-box;
@@ -846,7 +830,7 @@ th {
 }
 
 .link {
-  color: #A49EE0; 
+  color: #FFF9D6; 
   text-decoration: underline;
 
 }
@@ -1137,7 +1121,7 @@ button.secondary:focus {
   justify-content: center;
   margin-top: -20px;
   padding-top: 20px;
-  font-family: "DINPro", "Helvetica Neue",
+  font-family: "Font Awesome 5 Free",
 }
 
 .calendar-header {
@@ -1272,6 +1256,7 @@ button.secondary:focus {
 }
 
 .hamburger-menu {
+  background-color: #0A0058;
   position: fixed;
   right: -100%;
   transition: all 0.8s ease;
@@ -1287,7 +1272,7 @@ button.secondary:focus {
 }
 
 .hamburger-menu * {
-  color: #d5cbef;
+  color: #FFF9D6;
   text-decoration: none;
   font-size: 0.5cm;
 }
@@ -1316,7 +1301,7 @@ body {
 
 
 a {
-  color: #ffffff;
+  color: #FFF9D6;
   text-decoration: none;
 }
 
