@@ -1003,6 +1003,7 @@ nav ul a:hover::before {
   padding: 1rem;
   color: #0A0058;
   width: fit-content;
+  display: block !important;
 }
 
 .sponsor-email {
