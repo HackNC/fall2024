@@ -1176,3 +1176,29 @@ footer img {
   height: auto;
   display: block;
 }
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left u {
+  margin-right: 15px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
+  margin-left: 10px;
+}
