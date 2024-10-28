@@ -1003,6 +1003,7 @@ nav ul a:hover::before {
   padding: 1rem;
   color: #0A0058;
   width: fit-content;
+  display: block !important;
 }
 
 .sponsor-email {
@@ -1063,7 +1064,8 @@ nav ul a:hover::before {
 
 #Zilliz-logo,
 #Pendo-logo,
-#stand-out-stickers-logo {
+#stand-out-stickers-logo,
+#Resnet-logo {
   height: 8rem;
 }
 
