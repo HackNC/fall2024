@@ -232,7 +232,7 @@ nav ul {
 nav ul a {
   cursor: pointer;
   text-transform: uppercase;
-  font-weight: bold;
+  /* font-weight: bold; */
   display: inline-block;
   text-decoration: none;
   color: #FFF9D6;
@@ -257,6 +257,7 @@ nav ul a.selected {
   padding: 15px;
   margin: 3vh auto;
 }
+
 
 @media only screen and (max-width: 993px) {
   .card {
