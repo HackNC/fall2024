@@ -411,6 +411,7 @@ nav ul a:hover::before {
   align-items: center;
   justify-content: center;
   opacity: 0;
+  z-index: 4;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
@@ -425,6 +426,8 @@ nav ul a:hover::before {
   font-weight: bold;
   font-size: 2.5vw;
   text-transform: capitalize;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Monitor View Resizing */
