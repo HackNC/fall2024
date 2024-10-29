@@ -711,9 +711,9 @@ nav ul a.selected {
 #resources .card {
   flex: 1 0 30%;
   box-sizing: border-box;
-  background-color: #D5CAEF;
-  color: #4f3426;
-  border: 1px solid #4f3426;
+  background-color: #030139;
+  color: #FFF9D6;
+  /* border: 1px solid #4f3426; */
   margin: 1%;
 }
 
@@ -1332,7 +1332,7 @@ a {
 .card {
   background-color: #0A0058;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px 1px #FFED7B;
+  /* box-shadow: 0px 0px 15px 1px #FFED7B; */
   padding: 15px;
   margin: 15px;
   flex: 0 0 47.5%;
