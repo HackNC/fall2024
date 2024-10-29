@@ -56,12 +56,11 @@ body {
   a {
     color: #0A0058;
   }
-  
-  a:hover {
-      text-decoration: underline;
+
+  a:hover{
+    text-decoration: underline;
   }
-    
-  
+
   h1 {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
@@ -324,7 +323,7 @@ nav {
   }
   
   nav .home img {
-    height: 40px;
+    height: 60px;
     margin-right: 10px;
   }
   
