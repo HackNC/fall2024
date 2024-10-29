@@ -207,7 +207,7 @@ nav .home {
 }
 
 nav .home img {
-  height: 40px;
+  height: 60px;
   margin-right: 10px;
 }
 
@@ -1318,10 +1318,6 @@ body {
 a {
   color: #FFF9D6;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .container {
