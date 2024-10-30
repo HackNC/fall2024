@@ -126,8 +126,6 @@
   }
 }
 
-
-
 h2 {
   text-align: center;
 }
@@ -660,12 +658,12 @@ nav ul a.selected {
   }
 
   #links div:first-child {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #0A0058;
   }
 
   #links div:nth-child(2) {
     border-right: none;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #0A0058;
   }
 
   #links div:nth-child(3) {
@@ -697,8 +695,9 @@ nav ul a.selected {
 #prizes h2,
 #resources h2 {
   width: 100%;
-  text-align: left;
-  margin-bottom: 0;
+  text-align: center;
+  color: #FFED7B;
+  margin-bottom: 10px;
 }
 
 #prizes .container,
@@ -765,6 +764,8 @@ nav ul a.selected {
 
 #prizes .card p,
 #resources .card p {
+  text-align: center;
+  margin-top: 10px;
   margin-bottom: 0;
 }
 
