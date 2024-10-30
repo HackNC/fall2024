@@ -760,6 +760,7 @@ nav ul a.selected {
 #prizes .card h3,
 #resources .card h3 {
   margin: 0;
+  color:#FFED7B;
 }
 
 #prizes .card p,
@@ -767,6 +768,7 @@ nav ul a.selected {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 0;
+  
 }
 
 .map-container {
