@@ -1204,3 +1204,40 @@ footer img {
 .social-links a {
   margin-left: 10px;
 }
+
+/* Add these new mobile styles */
+@media only screen and (max-width: 768px) {
+  .footer-row {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+    top: 20px;
+    width: 100%;
+  }
+
+  .footer-left {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .footer-left u {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+
+  .footer-left a {
+    font-size: 12px;
+  }
+
+  .social-links {
+    gap: 8px;
+  }
+
+  .social-links a {
+    margin-left: 0;
+  }
+
+  .social-links i {
+    font-size: 1.2em;
+  }
+}
