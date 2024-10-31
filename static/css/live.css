@@ -230,7 +230,7 @@ nav ul {
 nav ul a {
   cursor: pointer;
   text-transform: uppercase;
-  font-weight: bold;
+  /* font-weight: bold; */
   display: inline-block;
   text-decoration: none;
   color: #FFF9D6;
